@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A088E4831B88446000A7AA30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A088E4821B88446000A7AA30 /* AppDelegate.swift */; };
-		A088E4851B88446000A7AA30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A088E4841B88446000A7AA30 /* ViewController.swift */; };
+		A088E4851B88446000A7AA30 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A088E4841B88446000A7AA30 /* HomeViewController.swift */; };
 		A088E4881B88446000A7AA30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A088E4861B88446000A7AA30 /* Main.storyboard */; };
 		A088E48A1B88446000A7AA30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A088E4891B88446000A7AA30 /* Assets.xcassets */; };
 		A088E48D1B88446000A7AA30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A088E48B1B88446000A7AA30 /* LaunchScreen.storyboard */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		A088E47F1B88446000A7AA30 /* Cantina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cantina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A088E4821B88446000A7AA30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A088E4841B88446000A7AA30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A088E4841B88446000A7AA30 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A088E4871B88446000A7AA30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A088E4891B88446000A7AA30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A088E48C1B88446000A7AA30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				A088E4821B88446000A7AA30 /* AppDelegate.swift */,
-				A088E4841B88446000A7AA30 /* ViewController.swift */,
+				A088E4841B88446000A7AA30 /* HomeViewController.swift */,
 				A088E4861B88446000A7AA30 /* Main.storyboard */,
 				A088E4891B88446000A7AA30 /* Assets.xcassets */,
 				A088E48B1B88446000A7AA30 /* LaunchScreen.storyboard */,
@@ -258,7 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A088E4851B88446000A7AA30 /* ViewController.swift in Sources */,
+				A088E4851B88446000A7AA30 /* HomeViewController.swift in Sources */,
 				A088E4831B88446000A7AA30 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +486,7 @@
 				A088E4A91B88446000A7AA30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A088E4AA1B88446000A7AA30 /* Build configuration list for PBXNativeTarget "CantinaTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +495,7 @@
 				A088E4AC1B88446000A7AA30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A088E4AD1B88446000A7AA30 /* Build configuration list for PBXNativeTarget "CantinaUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +504,7 @@
 				A088E4AF1B88446000A7AA30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
