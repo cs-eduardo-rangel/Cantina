@@ -141,10 +141,44 @@
 			children = (
 				A088E4821B88446000A7AA30 /* AppDelegate.swift */,
 				A088E4841B88446000A7AA30 /* HomeViewController.swift */,
-				A088E4861B88446000A7AA30 /* Main.storyboard */,
-				A088E4891B88446000A7AA30 /* Assets.xcassets */,
-				A088E48B1B88446000A7AA30 /* LaunchScreen.storyboard */,
 				A088E48E1B88446000A7AA30 /* Info.plist */,
+				A0CD77F71B88869D00ED3AC6 /* Design */,
+			);
+			path = Cantina;
+			sourceTree = "<group>";
+		};
+		A088E4961B88446000A7AA30 /* CantinaTests */ = {
+			isa = PBXGroup;
+			children = (
+				A088E4971B88446000A7AA30 /* CantinaTests.swift */,
+				A088E4991B88446000A7AA30 /* Info.plist */,
+			);
+			path = CantinaTests;
+			sourceTree = "<group>";
+		};
+		A088E4A11B88446000A7AA30 /* CantinaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A088E4A21B88446000A7AA30 /* CantinaUITests.swift */,
+				A088E4A41B88446000A7AA30 /* Info.plist */,
+			);
+			path = CantinaUITests;
+			sourceTree = "<group>";
+		};
+		A0CD77F71B88869D00ED3AC6 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				A088E4891B88446000A7AA30 /* Assets.xcassets */,
+				A088E4861B88446000A7AA30 /* Main.storyboard */,
+				A088E48B1B88446000A7AA30 /* LaunchScreen.storyboard */,
+				A0CD77F81B8886C900ED3AC6 /* SF-UI */,
+			);
+			name = Design;
+			sourceTree = "<group>";
+		};
+		A0CD77F81B8886C900ED3AC6 /* SF-UI */ = {
+			isa = PBXGroup;
+			children = (
 				A0CD77CD1B887DF700ED3AC6 /* SF-UI-Display-Black.otf */,
 				A0CD77CE1B887DF700ED3AC6 /* SF-UI-Display-Bold.otf */,
 				A0CD77CF1B887DF700ED3AC6 /* SF-UI-Display-Heavy.otf */,
@@ -167,25 +201,7 @@
 				A0CD77E01B887DF700ED3AC6 /* SF-UI-Text-Semibold.otf */,
 				A0CD77E11B887DF700ED3AC6 /* SF-UI-Text-SemiboldItalic.otf */,
 			);
-			path = Cantina;
-			sourceTree = "<group>";
-		};
-		A088E4961B88446000A7AA30 /* CantinaTests */ = {
-			isa = PBXGroup;
-			children = (
-				A088E4971B88446000A7AA30 /* CantinaTests.swift */,
-				A088E4991B88446000A7AA30 /* Info.plist */,
-			);
-			path = CantinaTests;
-			sourceTree = "<group>";
-		};
-		A088E4A11B88446000A7AA30 /* CantinaUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A088E4A21B88446000A7AA30 /* CantinaUITests.swift */,
-				A088E4A41B88446000A7AA30 /* Info.plist */,
-			);
-			path = CantinaUITests;
+			name = "SF-UI";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
