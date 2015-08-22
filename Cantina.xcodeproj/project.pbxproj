@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A088E4831B88446000A7AA30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A088E4821B88446000A7AA30 /* AppDelegate.swift */; };
+		A088E4851B88446000A7AA30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A088E4841B88446000A7AA30 /* ViewController.swift */; };
+		A088E4881B88446000A7AA30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A088E4861B88446000A7AA30 /* Main.storyboard */; };
+		A088E48A1B88446000A7AA30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A088E4891B88446000A7AA30 /* Assets.xcassets */; };
+		A088E48D1B88446000A7AA30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A088E48B1B88446000A7AA30 /* LaunchScreen.storyboard */; };
+		A088E4981B88446000A7AA30 /* CantinaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A088E4971B88446000A7AA30 /* CantinaTests.swift */; };
+		A088E4A31B88446000A7AA30 /* CantinaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A088E4A21B88446000A7AA30 /* CantinaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A088E4941B88446000A7AA30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A088E4771B88446000A7AA30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A088E47E1B88446000A7AA30;
+			remoteInfo = Cantina;
+		};
+		A088E49F1B88446000A7AA30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A088E4771B88446000A7AA30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A088E47E1B88446000A7AA30;
+			remoteInfo = Cantina;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A088E47F1B88446000A7AA30 /* Cantina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cantina.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A088E4821B88446000A7AA30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A088E4841B88446000A7AA30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A088E4871B88446000A7AA30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A088E4891B88446000A7AA30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A088E48C1B88446000A7AA30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A088E48E1B88446000A7AA30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A088E4931B88446000A7AA30 /* CantinaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CantinaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A088E4971B88446000A7AA30 /* CantinaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CantinaTests.swift; sourceTree = "<group>"; };
+		A088E4991B88446000A7AA30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A088E49E1B88446000A7AA30 /* CantinaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CantinaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A088E4A21B88446000A7AA30 /* CantinaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CantinaUITests.swift; sourceTree = "<group>"; };
+		A088E4A41B88446000A7AA30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A088E47C1B88446000A7AA30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A088E4901B88446000A7AA30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A088E49B1B88446000A7AA30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A088E4761B88446000A7AA30 = {
+			isa = PBXGroup;
+			children = (
+				A088E4811B88446000A7AA30 /* Cantina */,
+				A088E4961B88446000A7AA30 /* CantinaTests */,
+				A088E4A11B88446000A7AA30 /* CantinaUITests */,
+				A088E4801B88446000A7AA30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A088E4801B88446000A7AA30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A088E47F1B88446000A7AA30 /* Cantina.app */,
+				A088E4931B88446000A7AA30 /* CantinaTests.xctest */,
+				A088E49E1B88446000A7AA30 /* CantinaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A088E4811B88446000A7AA30 /* Cantina */ = {
+			isa = PBXGroup;
+			children = (
+				A088E4821B88446000A7AA30 /* AppDelegate.swift */,
+				A088E4841B88446000A7AA30 /* ViewController.swift */,
+				A088E4861B88446000A7AA30 /* Main.storyboard */,
+				A088E4891B88446000A7AA30 /* Assets.xcassets */,
+				A088E48B1B88446000A7AA30 /* LaunchScreen.storyboard */,
+				A088E48E1B88446000A7AA30 /* Info.plist */,
+			);
+			path = Cantina;
+			sourceTree = "<group>";
+		};
+		A088E4961B88446000A7AA30 /* CantinaTests */ = {
+			isa = PBXGroup;
+			children = (
+				A088E4971B88446000A7AA30 /* CantinaTests.swift */,
+				A088E4991B88446000A7AA30 /* Info.plist */,
+			);
+			path = CantinaTests;
+			sourceTree = "<group>";
+		};
+		A088E4A11B88446000A7AA30 /* CantinaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A088E4A21B88446000A7AA30 /* CantinaUITests.swift */,
+				A088E4A41B88446000A7AA30 /* Info.plist */,
+			);
+			path = CantinaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A088E47E1B88446000A7AA30 /* Cantina */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A088E4A71B88446000A7AA30 /* Build configuration list for PBXNativeTarget "Cantina" */;
+			buildPhases = (
+				A088E47B1B88446000A7AA30 /* Sources */,
+				A088E47C1B88446000A7AA30 /* Frameworks */,
+				A088E47D1B88446000A7AA30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cantina;
+			productName = Cantina;
+			productReference = A088E47F1B88446000A7AA30 /* Cantina.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A088E4921B88446000A7AA30 /* CantinaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A088E4AA1B88446000A7AA30 /* Build configuration list for PBXNativeTarget "CantinaTests" */;
+			buildPhases = (
+				A088E48F1B88446000A7AA30 /* Sources */,
+				A088E4901B88446000A7AA30 /* Frameworks */,
+				A088E4911B88446000A7AA30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A088E4951B88446000A7AA30 /* PBXTargetDependency */,
+			);
+			name = CantinaTests;
+			productName = CantinaTests;
+			productReference = A088E4931B88446000A7AA30 /* CantinaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A088E49D1B88446000A7AA30 /* CantinaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A088E4AD1B88446000A7AA30 /* Build configuration list for PBXNativeTarget "CantinaUITests" */;
+			buildPhases = (
+				A088E49A1B88446000A7AA30 /* Sources */,
+				A088E49B1B88446000A7AA30 /* Frameworks */,
+				A088E49C1B88446000A7AA30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A088E4A01B88446000A7AA30 /* PBXTargetDependency */,
+			);
+			name = CantinaUITests;
+			productName = CantinaUITests;
+			productReference = A088E49E1B88446000A7AA30 /* CantinaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A088E4771B88446000A7AA30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Concrete Solutions";
+				TargetAttributes = {
+					A088E47E1B88446000A7AA30 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = Q3LL743VYU;
+					};
+					A088E4921B88446000A7AA30 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = Q3LL743VYU;
+						TestTargetID = A088E47E1B88446000A7AA30;
+					};
+					A088E49D1B88446000A7AA30 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = Q3LL743VYU;
+						TestTargetID = A088E47E1B88446000A7AA30;
+					};
+				};
+			};
+			buildConfigurationList = A088E47A1B88446000A7AA30 /* Build configuration list for PBXProject "Cantina" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A088E4761B88446000A7AA30;
+			productRefGroup = A088E4801B88446000A7AA30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A088E47E1B88446000A7AA30 /* Cantina */,
+				A088E4921B88446000A7AA30 /* CantinaTests */,
+				A088E49D1B88446000A7AA30 /* CantinaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A088E47D1B88446000A7AA30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A088E48D1B88446000A7AA30 /* LaunchScreen.storyboard in Resources */,
+				A088E48A1B88446000A7AA30 /* Assets.xcassets in Resources */,
+				A088E4881B88446000A7AA30 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A088E4911B88446000A7AA30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A088E49C1B88446000A7AA30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A088E47B1B88446000A7AA30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A088E4851B88446000A7AA30 /* ViewController.swift in Sources */,
+				A088E4831B88446000A7AA30 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A088E48F1B88446000A7AA30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A088E4981B88446000A7AA30 /* CantinaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A088E49A1B88446000A7AA30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A088E4A31B88446000A7AA30 /* CantinaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A088E4951B88446000A7AA30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A088E47E1B88446000A7AA30 /* Cantina */;
+			targetProxy = A088E4941B88446000A7AA30 /* PBXContainerItemProxy */;
+		};
+		A088E4A01B88446000A7AA30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A088E47E1B88446000A7AA30 /* Cantina */;
+			targetProxy = A088E49F1B88446000A7AA30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A088E4861B88446000A7AA30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A088E4871B88446000A7AA30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A088E48B1B88446000A7AA30 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A088E48C1B88446000A7AA30 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A088E4A51B88446000A7AA30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A088E4A61B88446000A7AA30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A088E4A81B88446000A7AA30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Cantina/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.concretesolutions.Cantina;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A088E4A91B88446000A7AA30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Cantina/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.concretesolutions.Cantina;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A088E4AB1B88446000A7AA30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CantinaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.concretesolutions.CantinaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cantina.app/Cantina";
+			};
+			name = Debug;
+		};
+		A088E4AC1B88446000A7AA30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CantinaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.concretesolutions.CantinaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cantina.app/Cantina";
+			};
+			name = Release;
+		};
+		A088E4AE1B88446000A7AA30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CantinaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.concretesolutions.CantinaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Cantina;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A088E4AF1B88446000A7AA30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CantinaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.concretesolutions.CantinaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Cantina;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A088E47A1B88446000A7AA30 /* Build configuration list for PBXProject "Cantina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A088E4A51B88446000A7AA30 /* Debug */,
+				A088E4A61B88446000A7AA30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A088E4A71B88446000A7AA30 /* Build configuration list for PBXNativeTarget "Cantina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A088E4A81B88446000A7AA30 /* Debug */,
+				A088E4A91B88446000A7AA30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A088E4AA1B88446000A7AA30 /* Build configuration list for PBXNativeTarget "CantinaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A088E4AB1B88446000A7AA30 /* Debug */,
+				A088E4AC1B88446000A7AA30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A088E4AD1B88446000A7AA30 /* Build configuration list for PBXNativeTarget "CantinaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A088E4AE1B88446000A7AA30 /* Debug */,
+				A088E4AF1B88446000A7AA30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A088E4771B88446000A7AA30 /* Project object */;
+}
