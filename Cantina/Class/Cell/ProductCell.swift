@@ -11,6 +11,8 @@ import UIKit
 class ProductCell: UITableViewCell {
     @IBOutlet var name: UILabel!
     @IBOutlet var price: UILabel!
+    @IBOutlet var purchaseTime: UILabel!
+    @IBOutlet var purchaseDate: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

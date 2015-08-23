@@ -9,9 +9,12 @@
 import UIKit
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    @IBOutlet var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var debitLabel: UILabel!
     
-    var products: [String] = ["We", "Heart", "Swift"]
+    var products: [Product] = []
+    var debit = 0.0
+    
     
     //////////////////////////////////////////////////////////////////////
     // MARK: - Lifecycle
@@ -30,6 +33,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     //////////////////////////////////////////////////////////////////////
     // MARK: - IBActions
 
+    @IBAction func openProductList(sender: AnyObject) {
+        self.products.append(self.createProduct())
+        
+        self.tableView.reloadData()
+    }
     
     
     
@@ -46,10 +54,18 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     // MARK: - UITableViewDelegate
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell:ProductCell = tableView.dequeueReusableCellWithIdentifier("ProductCell", forIndexPath: indexPath) as! ProductCell
+        let cell: ProductCell = tableView.dequeueReusableCellWithIdentifier("ProductCell", forIndexPath: indexPath) as! ProductCell
         
-        cell.name?.text = self.products[indexPath.row]
-        cell.price?.text = "R$ 5,37"
+        let product = self.products[indexPath.row]
+        
+        let formatter = NSNumberFormatter()
+        formatter.numberStyle = .CurrencyStyle
+        formatter.locale = NSLocale(localeIdentifier: "pt_BR")
+        
+        cell.price?.text = formatter.stringFromNumber(product.price)
+        cell.name?.text = product.name
+        cell.purchaseTime?.text = product.purchaseTime
+        cell.purchaseDate?.text = product.purchaseDate
         
         return cell
     }
@@ -57,6 +73,48 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         print("You selected cell #\(indexPath.row)!")
+    }
+    
+    
+    
+    //////////////////////////////////////////////////////////////////////
+    // MARK: - Instance Methods
+    
+    func createProduct() -> Product {
+        let product = Product()
+        
+        product.name = "Novo Produto"
+        product.price = 12.47
+        
+        let date = NSDate()
+        let calendar = NSCalendar.currentCalendar()
+        let components = calendar.components([.Hour, .Minute, .Day, .Month], fromDate: date)
+        let hour = components.hour
+        let minute = components.minute
+        let day = components.day
+        let month = components.month
+        
+        product.purchaseTime = String(format: "%d:%.2dh", hour, minute)
+        product.purchaseDate = String(format: "%@ %d", self.monthStringWithMonth(month), day)
+        
+        
+        let formatter = NSNumberFormatter()
+        formatter.numberStyle = .CurrencyStyle
+        formatter.locale = NSLocale(localeIdentifier: "pt_BR")
+        
+        self.debit += product.price
+        
+        
+        self.debitLabel.text = formatter.stringFromNumber(self.debit)
+        
+        return product
+    }
+    
+    
+    func monthStringWithMonth(month: Int) -> String {
+        let months = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"]
+        
+        return months[month - 1]
     }
     
 }

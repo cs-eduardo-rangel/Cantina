@@ -11,7 +11,7 @@ import UIKit
 class Product: NSObject {
     var name = ""
     var price = 0.0
-//    var purchaseDate
-//    var purchaseTime
+    var purchaseDate = ""
+    var purchaseTime = ""
 
 }
