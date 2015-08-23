@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A00B5B331B893B9500349717 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B5B321B893B9500349717 /* ProductCell.swift */; };
+		A00B5B381B893EA000349717 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B5B371B893EA000349717 /* Product.swift */; };
 		A088E4831B88446000A7AA30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A088E4821B88446000A7AA30 /* AppDelegate.swift */; };
 		A088E4851B88446000A7AA30 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A088E4841B88446000A7AA30 /* HomeViewController.swift */; };
 		A088E4881B88446000A7AA30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A088E4861B88446000A7AA30 /* Main.storyboard */; };
@@ -55,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A00B5B321B893B9500349717 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		A00B5B371B893EA000349717 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = Model/Product.swift; sourceTree = "<group>"; };
 		A088E47F1B88446000A7AA30 /* Cantina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cantina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A088E4821B88446000A7AA30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A088E4841B88446000A7AA30 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +120,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A00B5B341B893BDC00349717 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				A088E4821B88446000A7AA30 /* AppDelegate.swift */,
+				A00B5B361B893BE900349717 /* Cell */,
+				A00B5B391B893EAC00349717 /* Model */,
+				A00B5B351B893BE200349717 /* ViewController */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		A00B5B351B893BE200349717 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A088E4841B88446000A7AA30 /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A00B5B361B893BE900349717 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A00B5B321B893B9500349717 /* ProductCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A00B5B391B893EAC00349717 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A00B5B371B893EA000349717 /* Product.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		A088E4761B88446000A7AA30 = {
 			isa = PBXGroup;
 			children = (
@@ -139,10 +178,9 @@
 		A088E4811B88446000A7AA30 /* Cantina */ = {
 			isa = PBXGroup;
 			children = (
-				A088E4821B88446000A7AA30 /* AppDelegate.swift */,
-				A088E4841B88446000A7AA30 /* HomeViewController.swift */,
-				A088E48E1B88446000A7AA30 /* Info.plist */,
+				A00B5B341B893BDC00349717 /* Class */,
 				A0CD77F71B88869D00ED3AC6 /* Design */,
+				A088E48E1B88446000A7AA30 /* Info.plist */,
 			);
 			path = Cantina;
 			sourceTree = "<group>";
@@ -358,6 +396,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A00B5B331B893B9500349717 /* ProductCell.swift in Sources */,
+				A00B5B381B893EA000349717 /* Product.swift in Sources */,
 				A088E4851B88446000A7AA30 /* HomeViewController.swift in Sources */,
 				A088E4831B88446000A7AA30 /* AppDelegate.swift in Sources */,
 			);
