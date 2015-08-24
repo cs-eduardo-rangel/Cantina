@@ -83,7 +83,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     func createProduct() -> Product {
         let product = Product()
         
-        product.name = "Novo Produto"
+        let productNames = ["Mate Leão", "Biscoito Goiabinha", "Fanta Laranja", "Coca-Cola", "Água", "Trakinas de Morango", "Trakinas de Chocolate"]
+        
+        product.name = productNames[Int(arc4random_uniform(UInt32(6)))]
         product.price = 12.47
         
         let date = NSDate()
