@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PurchasesViewController.swift
 //  Cantina
 //
 //  Created by Eduardo Rangel on 8/22/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class PurchasesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var debitLabel: UILabel!
     
@@ -33,11 +33,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     //////////////////////////////////////////////////////////////////////
     // MARK: - IBActions
 
-    @IBAction func openProductList(sender: AnyObject) {
-        self.products.append(self.createProduct())
-        
-        self.tableView.reloadData()
-    }
+//    @IBAction func openProductList(sender: AnyObject) {
+//        self.products.append(self.createProduct())
+//        
+//        self.tableView.reloadData()
+//    }
     
     
     
@@ -45,7 +45,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     // MARK: - UITableViewDataSource
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.products.count;
+        return self.products.count
     }
     
     
@@ -54,7 +54,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     // MARK: - UITableViewDelegate
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: ProductCell = tableView.dequeueReusableCellWithIdentifier("ProductCell", forIndexPath: indexPath) as! ProductCell
+        let cell: PurchaseCell = tableView.dequeueReusableCellWithIdentifier("PurchaseCell", forIndexPath: indexPath) as! PurchaseCell
         
         let product = self.products[indexPath.row]
         
@@ -80,12 +80,19 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     //////////////////////////////////////////////////////////////////////
     // MARK: - Instance Methods
     
+    func teste() {
+        self.products.append(self.createProduct())
+
+        self.tableView.reloadData()
+    }
+
+    
     func createProduct() -> Product {
         let product = Product()
         
-        let productNames = ["Mate Leão", "Biscoito Goiabinha", "Fanta Laranja", "Coca-Cola", "Água", "Trakinas de Morango", "Trakinas de Chocolate"]
+        let productNames = ["Mate Leão", "Biscoito Goiabinha", "Fanta Laranja", "Coca-Cola", "Água", "Trakinas Morango", "Trakinas Chocolate", "Bolo de Cenoura"]
         
-        product.name = productNames[Int(arc4random_uniform(UInt32(6)))]
+        product.name = productNames[Int(arc4random_uniform(UInt32(productNames.count)))]
         product.price = 12.47
         
         let date = NSDate()
@@ -99,14 +106,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         product.purchaseTime = String(format: "%d:%.2dh", hour, minute)
         product.purchaseDate = String(format: "%@ %d", self.monthStringWithMonth(month), day)
         
-        
         let formatter = NSNumberFormatter()
         formatter.numberStyle = .CurrencyStyle
         formatter.locale = NSLocale(localeIdentifier: "pt_BR")
         
         self.debit += product.price
-        
-        
+
         self.debitLabel.text = formatter.stringFromNumber(self.debit)
         
         return product
@@ -118,5 +123,16 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         return months[month - 1]
     }
+    
+    
+    
+    //////////////////////////////////////////////////////////////////////
+    // MARK: - Navigation
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+    }
+    
+    
     
 }

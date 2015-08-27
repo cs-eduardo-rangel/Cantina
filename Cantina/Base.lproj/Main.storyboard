@@ -8,8 +8,10 @@
         <mutableArray key="SF-UI-Display-Regular.otf">
             <string>SFUIDisplay-Regular</string>
             <string>SFUIDisplay-Regular</string>
+            <string>SFUIDisplay-Regular</string>
         </mutableArray>
         <mutableArray key="SF-UI-Display-Semibold.otf">
+            <string>SFUIDisplay-Semibold</string>
             <string>SFUIDisplay-Semibold</string>
             <string>SFUIDisplay-Semibold</string>
             <string>SFUIDisplay-Semibold</string>
@@ -19,10 +21,10 @@
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--Home View Controller-->
+        <!--Purchases View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Cantina" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PurchasesViewController" customModule="Cantina" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -55,7 +57,7 @@
                                     <constraint firstAttribute="height" constant="361" id="mA7-Kb-eku"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ProductCell" selectionStyle="gray" indentationWidth="10" reuseIdentifier="ProductCell" rowHeight="46" id="x6i-Fn-ZmX" customClass="ProductCell" customModule="Cantina" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" reuseIdentifier="PurchaseCell" rowHeight="46" id="x6i-Fn-ZmX" customClass="PurchaseCell" customModule="Cantina" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x6i-Fn-ZmX" id="SMK-xR-KAi">
@@ -112,7 +114,7 @@
                                                 <constraint firstItem="LgI-cE-4ds" firstAttribute="leading" secondItem="SMK-xR-KAi" secondAttribute="leadingMargin" constant="12" id="te9-J4-iLr"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <accessibility key="accessibilityConfiguration" identifier="ProductCell"/>
+                                        <accessibility key="accessibilityConfiguration" identifier=""/>
                                         <connections>
                                             <outlet property="name" destination="Td1-ro-DsP" id="36c-fY-9mf"/>
                                             <outlet property="price" destination="4b7-Zf-imG" id="1nQ-6l-eRM"/>
@@ -141,7 +143,7 @@
                                 </constraints>
                                 <state key="normal" image="Button"/>
                                 <connections>
-                                    <action selector="openProductList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h1w-Ce-JJ1"/>
+                                    <segue destination="dmZ-Jt-E0D" kind="presentation" id="uLt-OX-4ZF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -167,6 +169,100 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="462" y="558"/>
+        </scene>
+        <!--Products View Controller-->
+        <scene sceneID="OsT-hn-7P2">
+            <objects>
+                <viewController id="dmZ-Jt-E0D" customClass="ProductsViewController" customModule="Cantina" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="far-Gp-kxj"/>
+                        <viewControllerLayoutGuide type="bottom" id="HKK-Wg-apz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MgF-S9-CZr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="77" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IxA-dN-K5g">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductCell" rowHeight="77" id="6Qv-vm-KYb" customClass="ProductCell" customModule="Cantina" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="77"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Qv-vm-KYb" id="vXG-ll-tB1">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="77"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VFx-uN-dBq">
+                                                    <rect key="frame" x="8" y="8" width="124" height="61"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dOK-Y8-m55">
+                                                            <rect key="frame" x="0.0" y="6" width="50" height="50"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mate Leão" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20p-kE-9dA">
+                                                            <rect key="frame" x="60" y="22" width="64" height="17"/>
+                                                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                                                            <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BX3-TI-Tgg">
+                                                    <rect key="frame" x="482" y="17" width="110" height="43"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="R$ 2,60" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yab-5s-Cnh">
+                                                            <rect key="frame" x="0.0" y="0.0" width="51" height="43"/>
+                                                            <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="14"/>
+                                                            <color key="textColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saf-aR-tAk">
+                                                            <rect key="frame" x="71" y="0.0" width="39" height="43"/>
+                                                            <state key="normal" image="Button"/>
+                                                            <connections>
+                                                                <action selector="buyProduct:" destination="dmZ-Jt-E0D" eventType="touchUpInside" id="0jL-8Q-bAk"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="VFx-uN-dBq" firstAttribute="top" secondItem="vXG-ll-tB1" secondAttribute="topMargin" id="4rs-Z6-Mzx"/>
+                                                <constraint firstItem="VFx-uN-dBq" firstAttribute="leading" secondItem="vXG-ll-tB1" secondAttribute="leadingMargin" id="HQB-dI-YOG"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="BX3-TI-Tgg" secondAttribute="bottom" constant="9" id="VKa-1e-ZDA"/>
+                                                <constraint firstItem="VFx-uN-dBq" firstAttribute="bottom" secondItem="vXG-ll-tB1" secondAttribute="bottomMargin" id="cqO-AU-W9v"/>
+                                                <constraint firstItem="BX3-TI-Tgg" firstAttribute="top" secondItem="vXG-ll-tB1" secondAttribute="topMargin" constant="9" id="jBV-zJ-WVC"/>
+                                                <constraint firstItem="BX3-TI-Tgg" firstAttribute="trailing" secondItem="vXG-ll-tB1" secondAttribute="trailingMargin" id="yTf-g6-Bjv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="productImage" destination="dOK-Y8-m55" id="g8R-3k-Aug"/>
+                                            <outlet property="productNameLabel" destination="20p-kE-9dA" id="fYs-mr-n7u"/>
+                                            <outlet property="productPriceLabel" destination="yab-5s-Cnh" id="FP9-oa-U7T"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="dmZ-Jt-E0D" id="Txf-JU-AnF"/>
+                                    <outlet property="delegate" destination="dmZ-Jt-E0D" id="MSH-sx-pYV"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IxA-dN-K5g" firstAttribute="leading" secondItem="MgF-S9-CZr" secondAttribute="leading" id="IsO-jD-3WH"/>
+                            <constraint firstItem="IxA-dN-K5g" firstAttribute="top" secondItem="MgF-S9-CZr" secondAttribute="top" id="Tuc-Mg-dUz"/>
+                            <constraint firstItem="HKK-Wg-apz" firstAttribute="top" secondItem="IxA-dN-K5g" secondAttribute="bottom" id="bNQ-51-y9D"/>
+                            <constraint firstAttribute="trailing" secondItem="IxA-dN-K5g" secondAttribute="trailing" id="xnz-iT-Aqx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="IxA-dN-K5g" id="ycj-Ui-llu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fG5-HA-nWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="462" y="1379"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="sK5-Yc-XyR">
