@@ -33,11 +33,11 @@ class PurchasesViewController: UIViewController, UITableViewDelegate, UITableVie
     //////////////////////////////////////////////////////////////////////
     // MARK: - IBActions
 
-//    @IBAction func openProductList(sender: AnyObject) {
-//        self.products.append(self.createProduct())
-//        
-//        self.tableView.reloadData()
-//    }
+    @IBAction func openProductList(sender: AnyObject) {
+        self.products.append(self.createProduct())
+        
+        self.tableView.reloadData()
+    }
     
     
     
@@ -80,11 +80,11 @@ class PurchasesViewController: UIViewController, UITableViewDelegate, UITableVie
     //////////////////////////////////////////////////////////////////////
     // MARK: - Instance Methods
     
-    func teste() {
-        self.products.append(self.createProduct())
-
-        self.tableView.reloadData()
-    }
+//    func teste() {
+//        self.products.append(self.createProduct())
+//
+//        self.tableView.reloadData()
+//    }
 
     
     func createProduct() -> Product {

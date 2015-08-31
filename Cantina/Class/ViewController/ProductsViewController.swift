@@ -32,7 +32,7 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
     @IBAction func buyProduct(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: { () -> Void in
             let purchasesVC = PurchasesViewController()
-            purchasesVC.teste()
+//            purchasesVC.teste()
         })
     }
     
