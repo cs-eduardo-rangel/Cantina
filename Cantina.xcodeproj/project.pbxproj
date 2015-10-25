@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98CA00FE1520CF3C5AF14CB5 /* libPods-Cantina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF3ED976F756A77335BD2298 /* libPods-Cantina.a */; };
 		A00B5B331B893B9500349717 /* PurchaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B5B321B893B9500349717 /* PurchaseCell.swift */; };
 		A00B5B381B893EA000349717 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B5B371B893EA000349717 /* Product.swift */; };
 		A03998471BDD4D8A00663F40 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03998461BDD4D8A00663F40 /* LoginViewController.swift */; };
 		A03998481BDD4D8A00663F40 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03998461BDD4D8A00663F40 /* LoginViewController.swift */; };
 		A03998491BDD4D8A00663F40 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03998461BDD4D8A00663F40 /* LoginViewController.swift */; };
+		A039984B1BDD576D00663F40 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A039984A1BDD576D00663F40 /* GoogleService-Info.plist */; };
+		A039984C1BDD576D00663F40 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A039984A1BDD576D00663F40 /* GoogleService-Info.plist */; };
+		A039984D1BDD576D00663F40 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A039984A1BDD576D00663F40 /* GoogleService-Info.plist */; };
 		A0595AD71B8D6D7C00846350 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0595AD61B8D6D7C00846350 /* ProductsViewController.swift */; };
 		A0595AD91B8D737C00846350 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0595AD81B8D737C00846350 /* ProductCell.swift */; };
 		A088E4831B88446000A7AA30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A088E4821B88446000A7AA30 /* AppDelegate.swift */; };
@@ -65,6 +69,8 @@
 		A00B5B321B893B9500349717 /* PurchaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseCell.swift; sourceTree = "<group>"; };
 		A00B5B371B893EA000349717 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = Model/Product.swift; sourceTree = "<group>"; };
 		A03998461BDD4D8A00663F40 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A039984A1BDD576D00663F40 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A039984E1BDD5CFF00663F40 /* Cantina-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Cantina-Bridging-Header.h"; sourceTree = "<group>"; };
 		A0595AD61B8D6D7C00846350 /* ProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		A0595AD81B8D737C00846350 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		A088E47F1B88446000A7AA30 /* Cantina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cantina.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +107,9 @@
 		A0CD77DF1B887DF700ED3AC6 /* SF-UI-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Regular.otf"; path = "SF-UI/SF-UI-Text-Regular.otf"; sourceTree = "<group>"; };
 		A0CD77E01B887DF700ED3AC6 /* SF-UI-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Semibold.otf"; path = "SF-UI/SF-UI-Text-Semibold.otf"; sourceTree = "<group>"; };
 		A0CD77E11B887DF700ED3AC6 /* SF-UI-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-SemiboldItalic.otf"; path = "SF-UI/SF-UI-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		AF3ED976F756A77335BD2298 /* libPods-Cantina.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cantina.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B297D03611A8D7F220340E0E /* Pods-Cantina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cantina.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cantina/Pods-Cantina.debug.xcconfig"; sourceTree = "<group>"; };
+		B73BD2A4F18ADB1A49C8762F /* Pods-Cantina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cantina.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cantina/Pods-Cantina.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98CA00FE1520CF3C5AF14CB5 /* libPods-Cantina.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +138,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EFB4E9311BFCAF3A6CC58B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B297D03611A8D7F220340E0E /* Pods-Cantina.debug.xcconfig */,
+				B73BD2A4F18ADB1A49C8762F /* Pods-Cantina.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		774720658CC342C97D46287E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF3ED976F756A77335BD2298 /* libPods-Cantina.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A00B5B341B893BDC00349717 /* Class */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,10 +196,13 @@
 		A088E4761B88446000A7AA30 = {
 			isa = PBXGroup;
 			children = (
+				A039984E1BDD5CFF00663F40 /* Cantina-Bridging-Header.h */,
 				A088E4811B88446000A7AA30 /* Cantina */,
 				A088E4961B88446000A7AA30 /* CantinaTests */,
 				A088E4A11B88446000A7AA30 /* CantinaUITests */,
 				A088E4801B88446000A7AA30 /* Products */,
+				3EFB4E9311BFCAF3A6CC58B1 /* Pods */,
+				774720658CC342C97D46287E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -192,6 +222,7 @@
 				A00B5B341B893BDC00349717 /* Class */,
 				A0CD77F71B88869D00ED3AC6 /* Design */,
 				A088E48E1B88446000A7AA30 /* Info.plist */,
+				A039984A1BDD576D00663F40 /* GoogleService-Info.plist */,
 			);
 			path = Cantina;
 			sourceTree = "<group>";
@@ -260,9 +291,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A088E4A71B88446000A7AA30 /* Build configuration list for PBXNativeTarget "Cantina" */;
 			buildPhases = (
+				EDBDA23A098AF1AF55DAD8DD /* Check Pods Manifest.lock */,
 				A088E47B1B88446000A7AA30 /* Sources */,
 				A088E47C1B88446000A7AA30 /* Frameworks */,
 				A088E47D1B88446000A7AA30 /* Resources */,
+				EBB2B85D2583DFFCF14455F0 /* Embed Pods Frameworks */,
+				734668FDB837133E53FB1A4E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -363,6 +397,7 @@
 			files = (
 				A088E48D1B88446000A7AA30 /* LaunchScreen.storyboard in Resources */,
 				A0CD77F31B887DF700ED3AC6 /* SF-UI-Text-MediumItalic.otf in Resources */,
+				A039984B1BDD576D00663F40 /* GoogleService-Info.plist in Resources */,
 				A0CD77E41B887DF700ED3AC6 /* SF-UI-Display-Heavy.otf in Resources */,
 				A0CD77E81B887DF700ED3AC6 /* SF-UI-Display-Semibold.otf in Resources */,
 				A0CD77ED1B887DF700ED3AC6 /* SF-UI-Text-Heavy.otf in Resources */,
@@ -392,6 +427,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A039984C1BDD576D00663F40 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,10 +435,59 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A039984D1BDD576D00663F40 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		734668FDB837133E53FB1A4E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cantina/Pods-Cantina-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBB2B85D2583DFFCF14455F0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cantina/Pods-Cantina-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDBDA23A098AF1AF55DAD8DD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A088E47B1B88446000A7AA30 /* Sources */ = {
@@ -557,6 +642,7 @@
 		};
 		A088E4A81B88446000A7AA30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B297D03611A8D7F220340E0E /* Pods-Cantina.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Cantina/Info.plist;
@@ -568,6 +654,7 @@
 		};
 		A088E4A91B88446000A7AA30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B73BD2A4F18ADB1A49C8762F /* Pods-Cantina.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Cantina/Info.plist;
