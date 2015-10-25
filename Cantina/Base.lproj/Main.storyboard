@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="okc-xb-SDa">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <mutableArray key="SF-UI-Display-Bold.otf">
+            <string>SFUIDisplay-Bold</string>
+        </mutableArray>
         <mutableArray key="SF-UI-Display-Regular.otf">
             <string>SFUIDisplay-Regular</string>
             <string>SFUIDisplay-Regular</string>
@@ -151,6 +154,49 @@
             </objects>
             <point key="canvasLocation" x="462" y="558"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="3ux-A2-o1q">
+            <objects>
+                <viewController id="okc-xb-SDa" customClass="LoginViewController" customModule="Cantina" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zQI-Ib-Ipy"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q61-CV-efM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qK2-xh-Qgf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgF-se-UTc">
+                                <rect key="frame" x="20" y="452" width="560" height="46"/>
+                                <color key="backgroundColor" red="0.39607843139999999" green="0.31764705879999999" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="J8U-0b-dwl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Bold" family="SF UI Display" pointSize="15"/>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_app_cantina" translatesAutoresizingMaskIntoConstraints="NO" id="Iis-Pe-00j">
+                                <rect key="frame" x="178" y="101" width="244" height="266"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZgF-se-UTc" firstAttribute="leading" secondItem="qK2-xh-Qgf" secondAttribute="leadingMargin" id="2nI-pA-yDS"/>
+                            <constraint firstItem="ZgF-se-UTc" firstAttribute="top" secondItem="Iis-Pe-00j" secondAttribute="bottom" constant="85" id="3rD-Ji-Pmg"/>
+                            <constraint firstItem="Iis-Pe-00j" firstAttribute="top" secondItem="zQI-Ib-Ipy" secondAttribute="bottom" constant="81" id="8jo-dl-02U"/>
+                            <constraint firstItem="Iis-Pe-00j" firstAttribute="leading" secondItem="qK2-xh-Qgf" secondAttribute="leadingMargin" constant="158" id="91e-sl-HE9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Iis-Pe-00j" secondAttribute="trailing" constant="158" id="HFe-wi-hWO"/>
+                            <constraint firstItem="Q61-CV-efM" firstAttribute="top" secondItem="ZgF-se-UTc" secondAttribute="bottom" constant="102" id="K7C-ui-re0"/>
+                            <constraint firstItem="ZgF-se-UTc" firstAttribute="centerX" secondItem="Iis-Pe-00j" secondAttribute="centerX" id="zPb-9f-aH5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NRK-Ur-ZKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-435" y="558"/>
+        </scene>
         <!--Products View Controller-->
         <scene sceneID="OsT-hn-7P2">
             <objects>
@@ -274,5 +320,6 @@
         <image name="Button" width="39" height="42"/>
         <image name="Item" width="14" height="66"/>
         <image name="Tela" width="360" height="640"/>
+        <image name="logo_app_cantina" width="591" height="647"/>
     </resources>
 </document>
