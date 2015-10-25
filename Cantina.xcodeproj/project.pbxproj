@@ -69,8 +69,8 @@
 		A00B5B321B893B9500349717 /* PurchaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseCell.swift; sourceTree = "<group>"; };
 		A00B5B371B893EA000349717 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = Model/Product.swift; sourceTree = "<group>"; };
 		A03998461BDD4D8A00663F40 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		A039984A1BDD576D00663F40 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
-		A039984E1BDD5CFF00663F40 /* Cantina-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Cantina-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		A039984A1BDD576D00663F40 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A039984F1BDD885B00663F40 /* Cantina-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Cantina-Bridging-Header.h"; path = "Cantina/Cantina-Bridging-Header.h"; sourceTree = "<group>"; };
 		A0595AD61B8D6D7C00846350 /* ProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		A0595AD81B8D737C00846350 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		A088E47F1B88446000A7AA30 /* Cantina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cantina.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,7 +79,7 @@
 		A088E4871B88446000A7AA30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A088E4891B88446000A7AA30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A088E48C1B88446000A7AA30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A088E48E1B88446000A7AA30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A088E48E1B88446000A7AA30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Cantina/Info.plist; sourceTree = "<group>"; };
 		A088E4931B88446000A7AA30 /* CantinaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CantinaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A088E4971B88446000A7AA30 /* CantinaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CantinaTests.swift; sourceTree = "<group>"; };
 		A088E4991B88446000A7AA30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -193,12 +193,23 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		A03998501BDD887800663F40 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A088E48E1B88446000A7AA30 /* Info.plist */,
+				A039984A1BDD576D00663F40 /* GoogleService-Info.plist */,
+				A039984F1BDD885B00663F40 /* Cantina-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		A088E4761B88446000A7AA30 = {
 			isa = PBXGroup;
 			children = (
 				A088E4811B88446000A7AA30 /* Cantina */,
 				A088E4961B88446000A7AA30 /* CantinaTests */,
 				A088E4A11B88446000A7AA30 /* CantinaUITests */,
+				A03998501BDD887800663F40 /* Supporting Files */,
 				A088E4801B88446000A7AA30 /* Products */,
 				3EFB4E9311BFCAF3A6CC58B1 /* Pods */,
 				774720658CC342C97D46287E /* Frameworks */,
@@ -220,9 +231,6 @@
 			children = (
 				A00B5B341B893BDC00349717 /* Class */,
 				A0CD77F71B88869D00ED3AC6 /* Design */,
-				A088E48E1B88446000A7AA30 /* Info.plist */,
-				A039984A1BDD576D00663F40 /* GoogleService-Info.plist */,
-				A039984E1BDD5CFF00663F40 /* Cantina-Bridging-Header.h */,
 			);
 			path = Cantina;
 			sourceTree = "<group>";
@@ -597,6 +605,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Cantina/Cantina-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -635,6 +644,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Cantina/Cantina-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -649,7 +659,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.concretesolutions.Cantina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Cantina-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cantina/Cantina-Bridging-Header.h";
 				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Debug;
@@ -663,7 +673,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.concretesolutions.Cantina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Cantina-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cantina/Cantina-Bridging-Header.h";
 				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Release;
