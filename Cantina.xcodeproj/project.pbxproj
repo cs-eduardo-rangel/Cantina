@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		A00B5B331B893B9500349717 /* PurchaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B5B321B893B9500349717 /* PurchaseCell.swift */; };
 		A00B5B381B893EA000349717 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B5B371B893EA000349717 /* Product.swift */; };
+		A03998471BDD4D8A00663F40 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03998461BDD4D8A00663F40 /* LoginViewController.swift */; };
+		A03998481BDD4D8A00663F40 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03998461BDD4D8A00663F40 /* LoginViewController.swift */; };
+		A03998491BDD4D8A00663F40 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03998461BDD4D8A00663F40 /* LoginViewController.swift */; };
 		A0595AD71B8D6D7C00846350 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0595AD61B8D6D7C00846350 /* ProductsViewController.swift */; };
 		A0595AD91B8D737C00846350 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0595AD81B8D737C00846350 /* ProductCell.swift */; };
 		A088E4831B88446000A7AA30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A088E4821B88446000A7AA30 /* AppDelegate.swift */; };
@@ -61,6 +64,7 @@
 /* Begin PBXFileReference section */
 		A00B5B321B893B9500349717 /* PurchaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseCell.swift; sourceTree = "<group>"; };
 		A00B5B371B893EA000349717 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = Model/Product.swift; sourceTree = "<group>"; };
+		A03998461BDD4D8A00663F40 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A0595AD61B8D6D7C00846350 /* ProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		A0595AD81B8D737C00846350 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		A088E47F1B88446000A7AA30 /* Cantina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cantina.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +144,7 @@
 			children = (
 				A088E4841B88446000A7AA30 /* PurchasesViewController.swift */,
 				A0595AD61B8D6D7C00846350 /* ProductsViewController.swift */,
+				A03998461BDD4D8A00663F40 /* LoginViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -404,6 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A03998471BDD4D8A00663F40 /* LoginViewController.swift in Sources */,
 				A00B5B331B893B9500349717 /* PurchaseCell.swift in Sources */,
 				A00B5B381B893EA000349717 /* Product.swift in Sources */,
 				A088E4851B88446000A7AA30 /* PurchasesViewController.swift in Sources */,
@@ -417,6 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A03998481BDD4D8A00663F40 /* LoginViewController.swift in Sources */,
 				A088E4981B88446000A7AA30 /* CantinaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +432,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A03998491BDD4D8A00663F40 /* LoginViewController.swift in Sources */,
 				A088E4A31B88446000A7AA30 /* CantinaUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
