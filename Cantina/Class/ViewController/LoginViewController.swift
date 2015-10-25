@@ -8,12 +8,23 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+// Match the ObjC symbol name inside Main.storyboard.
+//@objc(LoginViewController)
+
+class LoginViewController: UIViewController, GIDSignInUIDelegate {
+    
+    @IBOutlet weak var googleSignInButton: GIDSignInButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        GIDSignIn.sharedInstance().uiDelegate = self
+        
+        // Uncomment to automatically sign in the user.
+        //GIDSignIn.sharedInstance().signInSilently()
+        
+        // TODO(developer) Configure the sign-in button look/feel
+        // ...
     }
     
 
@@ -24,15 +35,17 @@ class LoginViewController: UIViewController {
     
     
     func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!, withError error: NSError!) {
-            if (error == nil) {
-                // Perform any operations on signed in user here.
-                // ...
-            } else {
-                print("\(error.localizedDescription)")
-            }
+        if (error == nil) {
+            // Perform any operations on signed in user here.
+            // ...
+        } else {
+            print("\(error.localizedDescription)")
+        }
     }
     
-    
+    @IBAction func didTapSignOut(sender: AnyObject) {
+        GIDSignIn.sharedInstance().signOut()
+    }
 
     //////////////////////////////////////////////////////////////////////
     // MARK: - Navigation
