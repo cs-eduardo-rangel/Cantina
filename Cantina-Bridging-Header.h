@@ -9,5 +9,6 @@
 #ifndef Cantina_Bridging_Header_h
 #define Cantina_Bridging_Header_h
 
+#import <Google/SignIn.h>
 
 #endif /* Cantina_Bridging_Header_h */
