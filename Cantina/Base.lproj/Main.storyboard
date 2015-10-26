@@ -210,30 +210,44 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_app_cantina" translatesAutoresizingMaskIntoConstraints="NO" id="Iis-Pe-00j">
                                 <rect key="frame" x="175" y="80" width="250" height="273"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="273" id="M78-fp-PWm"/>
-                                    <constraint firstAttribute="width" constant="250" id="lCl-BV-VUm"/>
+                                    <constraint firstAttribute="width" constant="250" id="Yoh-Fd-5ZO"/>
+                                    <constraint firstAttribute="height" constant="273" id="ycr-rS-uTz"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fnA-G2-saz" customClass="GIDSignInButton">
-                                <rect key="frame" x="20" y="410" width="560" height="50"/>
+                                <rect key="frame" x="20" y="410" width="560" height="60"/>
                                 <color key="backgroundColor" red="0.39607843139999999" green="0.31764705879999999" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="a8Q-nW-Vpz"/>
+                                    <constraint firstAttribute="height" constant="60" id="a8Q-nW-Vpz"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="showActivityIndicator:" destination="okc-xb-SDa" eventType="touchUpInside" id="Lkz-qC-IhI"/>
+                                </connections>
                             </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="hpX-Gu-vKm">
+                                <rect key="frame" x="282" y="478" width="37" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="VLd-6o-9if"/>
+                                    <constraint firstAttribute="height" constant="37" id="vnd-8H-mnr"/>
+                                </constraints>
+                                <color key="color" red="0.39607843139999999" green="0.31764705879999999" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fnA-G2-saz" firstAttribute="top" secondItem="Iis-Pe-00j" secondAttribute="bottom" constant="57" id="3g0-5p-LBt"/>
-                            <constraint firstItem="Iis-Pe-00j" firstAttribute="leading" secondItem="qK2-xh-Qgf" secondAttribute="leadingMargin" constant="155" id="545-Yy-8w1"/>
-                            <constraint firstItem="fnA-G2-saz" firstAttribute="leading" secondItem="qK2-xh-Qgf" secondAttribute="leadingMargin" id="8Dj-0V-U2K"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Iis-Pe-00j" secondAttribute="trailing" constant="155" id="DII-no-y5a"/>
-                            <constraint firstItem="Iis-Pe-00j" firstAttribute="top" secondItem="zQI-Ib-Ipy" secondAttribute="bottom" constant="60" id="HGm-pW-0yo"/>
-                            <constraint firstItem="fnA-G2-saz" firstAttribute="trailing" secondItem="qK2-xh-Qgf" secondAttribute="trailingMargin" id="T0E-og-JZo"/>
+                            <constraint firstItem="hpX-Gu-vKm" firstAttribute="top" secondItem="fnA-G2-saz" secondAttribute="bottom" constant="8" id="36m-gT-zb8"/>
+                            <constraint firstItem="fnA-G2-saz" firstAttribute="leading" secondItem="qK2-xh-Qgf" secondAttribute="leadingMargin" id="4cu-D9-wyD"/>
+                            <constraint firstItem="hpX-Gu-vKm" firstAttribute="centerX" secondItem="qK2-xh-Qgf" secondAttribute="centerX" id="8ZB-Hc-deL"/>
+                            <constraint firstItem="fnA-G2-saz" firstAttribute="trailing" secondItem="qK2-xh-Qgf" secondAttribute="trailingMargin" id="Pjv-14-1ia"/>
+                            <constraint firstItem="fnA-G2-saz" firstAttribute="top" secondItem="Iis-Pe-00j" secondAttribute="bottom" constant="57" id="WYh-qc-yCn"/>
+                            <constraint firstItem="Iis-Pe-00j" firstAttribute="top" secondItem="zQI-Ib-Ipy" secondAttribute="bottom" constant="60" id="s1S-Y8-ieR"/>
+                            <constraint firstItem="Iis-Pe-00j" firstAttribute="centerX" secondItem="qK2-xh-Qgf" secondAttribute="centerX" id="zl2-iQ-tg9"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="googleSignInButton" destination="fnA-G2-saz" id="FIv-zj-E8m"/>
+                        <outlet property="indicatorView" destination="hpX-Gu-vKm" id="oAV-Zb-7fs"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="SegueToPurchases" id="vP3-5Q-Qgc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NRK-Ur-ZKr" userLabel="First Responder" sceneMemberID="firstResponder"/>

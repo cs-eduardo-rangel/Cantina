@@ -14,19 +14,19 @@ import UIKit
 class LoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
     
     @IBOutlet weak var googleSignInButton: GIDSignInButton!
+    @IBOutlet weak var indicatorView: UIActivityIndicatorView!
 
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.setupGoogleSignInDelegates
+        self.setupGoogleSignInDelegates()
         
         // Uncomment to automatically sign in the user.
         //GIDSignIn.sharedInstance().signInSilently()
         
-        // TODO(developer) Configure the sign-in button look/feel
-        // ...
+//        self.googleSignInButton.backgroundColor = UIColor.init(red: 101/255, green: 81/255, blue: 158/255, alpha: 1)
     }
     
 
@@ -42,10 +42,10 @@ class LoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDeleg
     }
     
     
-    @IBAction func didTapSignOut(sender: AnyObject) {
+    @IBAction func showActivityIndicator(sender: AnyObject) {
 //        GIDSignIn.sharedInstance().signOut()
-        
-        print("LOGOUT")
+        self.indicatorView.startAnimating()
+        print(">>>>>>>>>> LOGOUT")
     }
 
     //////////////////////////////////////////////////////////////////////
@@ -63,10 +63,12 @@ class LoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDeleg
     // MARK: - GIDSignInDelegate
     
     func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!, withError error: NSError!) {
-        print("signIn:didSignInForUser:withError")
+        print(">>>>>>>>>> signIn:didSignInForUser:withError")
         
         if (error == nil) {
-            self.performSegueWithIdentifier("", sender: self)
+            self.indicatorView.stopAnimating()
+            
+            self.performSegueWithIdentifier("SegueToPurchases", sender: self)
             
             // Perform any operations on signed in user here.
 //            let userId = user.userID                  // For client-side use only!
@@ -74,9 +76,11 @@ class LoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDeleg
 //            let name = user.profile.name
 //            let email = user.profile.email
             
-            //            NSNotificationCenter.defaultCenter().postNotificationName("ToggleAuthUINotification", object: nil, userInfo: ["statusText": "Signed in user:\n\(name)"])
+//            NSNotificationCenter.defaultCenter().postNotificationName("ToggleAuthUINotification", object: nil, userInfo: ["statusText": "Signed in user:\n\(name)"])
         } else {
-            print("\(error.localizedDescription)")
+            self.indicatorView.stopAnimating()
+            
+            print(">>>>>>>>>> \(error.localizedDescription)")
             
 //            NSNotificationCenter.defaultCenter().postNotificationName("ToggleAuthUINotification", object: nil, userInfo: nil)
         }
@@ -86,7 +90,7 @@ class LoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDeleg
     func signIn(signIn: GIDSignIn!, didDisconnectWithUser user:GIDGoogleUser!, withError error: NSError!) {
         // Perform any operations when the user disconnects from app here.
         
-        print("signIn:didDisconnectWithUser:withError")
+        print(">>>>>>>>>> signIn:didDisconnectWithUser:withError")
         
 //        NSNotificationCenter.defaultCenter().postNotificationName("ToggleAuthUINotification", object: nil, userInfo: ["statusText": "User has disconnected."])
     }
