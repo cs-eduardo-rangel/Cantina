@@ -21,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GGLContext.sharedInstance().configureWithError(&configureError)
         assert(configureError == nil, "Error configuring Google services: \(configureError)")
         
+        Parse.setApplicationId("z5kcJ98mrUkJ6V3ZGvNIYGiCizld9w9Se65I6zIO", clientKey: "FeyojuuN6VhgR2hk1Qa7k5e3mZ9klyuOrXLWSWh5")
+        
         return true
     }
     

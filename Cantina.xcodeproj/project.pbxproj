@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28CC90EF1C4A1003007B7B78 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CC90EE1C4A1003007B7B78 /* AudioToolbox.framework */; };
+		28CC90F11C4A100A007B7B78 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CC90F01C4A100A007B7B78 /* CFNetwork.framework */; };
+		28CC90F31C4A1012007B7B78 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CC90F21C4A1012007B7B78 /* CoreGraphics.framework */; };
+		28CC90F51C4A102E007B7B78 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CC90F41C4A102E007B7B78 /* CoreLocation.framework */; };
+		28CC90F71C4A1035007B7B78 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CC90F61C4A1035007B7B78 /* QuartzCore.framework */; };
+		28CC90F91C4A103F007B7B78 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CC90F81C4A103F007B7B78 /* Security.framework */; };
+		28CC90FB1C4A1046007B7B78 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CC90FA1C4A1046007B7B78 /* StoreKit.framework */; };
+		28CC90FD1C4A104F007B7B78 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CC90FC1C4A104F007B7B78 /* SystemConfiguration.framework */; };
+		28CC90FF1C4A1058007B7B78 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CC90FE1C4A1058007B7B78 /* libz.tbd */; };
+		28CC91011C4A1060007B7B78 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CC91001C4A1060007B7B78 /* libsqlite3.tbd */; };
+		28CC91041C4A10EF007B7B78 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CC91021C4A10EF007B7B78 /* Bolts.framework */; };
+		28CC91051C4A10EF007B7B78 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CC91031C4A10EF007B7B78 /* Parse.framework */; };
+		5043EA9E6CEC5A30DDE12927 /* libPods-CantinaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 009436B6B8342CCC918E9358 /* libPods-CantinaTests.a */; };
 		98CA00FE1520CF3C5AF14CB5 /* libPods-Cantina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF3ED976F756A77335BD2298 /* libPods-Cantina.a */; };
 		A00B5B331B893B9500349717 /* PurchaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B5B321B893B9500349717 /* PurchaseCell.swift */; };
 		A00B5B381B893EA000349717 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B5B371B893EA000349717 /* Product.swift */; };
@@ -66,6 +79,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		009436B6B8342CCC918E9358 /* libPods-CantinaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CantinaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B0BC6E91ACD85FC67F4DB38 /* Pods-CantinaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CantinaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CantinaTests/Pods-CantinaTests.release.xcconfig"; sourceTree = "<group>"; };
+		28CC90EE1C4A1003007B7B78 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		28CC90F01C4A100A007B7B78 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		28CC90F21C4A1012007B7B78 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28CC90F41C4A102E007B7B78 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		28CC90F61C4A1035007B7B78 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		28CC90F81C4A103F007B7B78 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		28CC90FA1C4A1046007B7B78 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		28CC90FC1C4A104F007B7B78 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		28CC90FE1C4A1058007B7B78 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		28CC91001C4A1060007B7B78 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		28CC91021C4A10EF007B7B78 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		28CC91031C4A10EF007B7B78 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		49BC328952897D7EBC326305 /* Pods-CantinaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CantinaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CantinaTests/Pods-CantinaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A00B5B321B893B9500349717 /* PurchaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseCell.swift; sourceTree = "<group>"; };
 		A00B5B371B893EA000349717 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = Model/Product.swift; sourceTree = "<group>"; };
 		A03998461BDD4D8A00663F40 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +145,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28CC91011C4A1060007B7B78 /* libsqlite3.tbd in Frameworks */,
+				28CC90FF1C4A1058007B7B78 /* libz.tbd in Frameworks */,
+				28CC90FD1C4A104F007B7B78 /* SystemConfiguration.framework in Frameworks */,
+				28CC91041C4A10EF007B7B78 /* Bolts.framework in Frameworks */,
+				28CC90FB1C4A1046007B7B78 /* StoreKit.framework in Frameworks */,
+				28CC90F91C4A103F007B7B78 /* Security.framework in Frameworks */,
+				28CC91051C4A10EF007B7B78 /* Parse.framework in Frameworks */,
+				28CC90F71C4A1035007B7B78 /* QuartzCore.framework in Frameworks */,
+				28CC90F51C4A102E007B7B78 /* CoreLocation.framework in Frameworks */,
+				28CC90F31C4A1012007B7B78 /* CoreGraphics.framework in Frameworks */,
+				28CC90F11C4A100A007B7B78 /* CFNetwork.framework in Frameworks */,
+				28CC90EF1C4A1003007B7B78 /* AudioToolbox.framework in Frameworks */,
 				98CA00FE1520CF3C5AF14CB5 /* libPods-Cantina.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,6 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5043EA9E6CEC5A30DDE12927 /* libPods-CantinaTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +184,8 @@
 			children = (
 				B297D03611A8D7F220340E0E /* Pods-Cantina.debug.xcconfig */,
 				B73BD2A4F18ADB1A49C8762F /* Pods-Cantina.release.xcconfig */,
+				49BC328952897D7EBC326305 /* Pods-CantinaTests.debug.xcconfig */,
+				0B0BC6E91ACD85FC67F4DB38 /* Pods-CantinaTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -150,7 +193,20 @@
 		774720658CC342C97D46287E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				28CC91021C4A10EF007B7B78 /* Bolts.framework */,
+				28CC91031C4A10EF007B7B78 /* Parse.framework */,
+				28CC91001C4A1060007B7B78 /* libsqlite3.tbd */,
+				28CC90FE1C4A1058007B7B78 /* libz.tbd */,
+				28CC90FC1C4A104F007B7B78 /* SystemConfiguration.framework */,
+				28CC90FA1C4A1046007B7B78 /* StoreKit.framework */,
+				28CC90F81C4A103F007B7B78 /* Security.framework */,
+				28CC90F61C4A1035007B7B78 /* QuartzCore.framework */,
+				28CC90F41C4A102E007B7B78 /* CoreLocation.framework */,
+				28CC90F21C4A1012007B7B78 /* CoreGraphics.framework */,
+				28CC90F01C4A100A007B7B78 /* CFNetwork.framework */,
+				28CC90EE1C4A1003007B7B78 /* AudioToolbox.framework */,
 				AF3ED976F756A77335BD2298 /* libPods-Cantina.a */,
+				009436B6B8342CCC918E9358 /* libPods-CantinaTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -319,9 +375,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A088E4AA1B88446000A7AA30 /* Build configuration list for PBXNativeTarget "CantinaTests" */;
 			buildPhases = (
+				D1F3F4F1EA901E717F30C7BF /* Check Pods Manifest.lock */,
 				A088E48F1B88446000A7AA30 /* Sources */,
 				A088E4901B88446000A7AA30 /* Frameworks */,
 				A088E4911B88446000A7AA30 /* Resources */,
+				6752C15D95099D6EC8F33AAF /* Embed Pods Frameworks */,
+				955811E38E1338E0C422246F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -450,6 +509,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6752C15D95099D6EC8F33AAF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CantinaTests/Pods-CantinaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		734668FDB837133E53FB1A4E /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -463,6 +537,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cantina/Pods-Cantina-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		955811E38E1338E0C422246F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CantinaTests/Pods-CantinaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1F3F4F1EA901E717F30C7BF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		EBB2B85D2583DFFCF14455F0 /* Embed Pods Frameworks */ = {
@@ -608,6 +712,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "Cantina/Cantina-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -647,6 +752,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "Cantina/Cantina-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -655,6 +761,10 @@
 			baseConfigurationReference = B297D03611A8D7F220340E0E /* Pods-Cantina.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Cantina/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.concretesolutions.Cantina;
@@ -669,6 +779,10 @@
 			baseConfigurationReference = B73BD2A4F18ADB1A49C8762F /* Pods-Cantina.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Cantina/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.concretesolutions.Cantina;
@@ -680,6 +794,7 @@
 		};
 		A088E4AB1B88446000A7AA30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49BC328952897D7EBC326305 /* Pods-CantinaTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CantinaTests/Info.plist;
@@ -692,6 +807,7 @@
 		};
 		A088E4AC1B88446000A7AA30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B0BC6E91ACD85FC67F4DB38 /* Pods-CantinaTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CantinaTests/Info.plist;
