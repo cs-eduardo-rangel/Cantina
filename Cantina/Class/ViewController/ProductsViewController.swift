@@ -29,14 +29,16 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
     //////////////////////////////////////////////////////////////////////
     // MARK: - IBActions
     
-    @IBAction func buyProduct(sender: AnyObject) {
+    @IBAction func buyProducts(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: { () -> Void in
-            let purchasesVC = PurchasesViewController()
-//            purchasesVC.teste()
+            
         })
     }
     
     
+    @IBAction func addProduct(sender: AnyObject) {
+        
+    }
     
     //////////////////////////////////////////////////////////////////////
     // MARK: - UITableViewDataSource

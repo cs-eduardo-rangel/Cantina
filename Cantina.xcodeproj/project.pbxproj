@@ -193,6 +193,7 @@
 		774720658CC342C97D46287E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				28CC90EE1C4A1003007B7B78 /* AudioToolbox.framework */,
 				28CC91021C4A10EF007B7B78 /* Bolts.framework */,
 				28CC91031C4A10EF007B7B78 /* Parse.framework */,
 				28CC91001C4A1060007B7B78 /* libsqlite3.tbd */,
@@ -204,7 +205,6 @@
 				28CC90F41C4A102E007B7B78 /* CoreLocation.framework */,
 				28CC90F21C4A1012007B7B78 /* CoreGraphics.framework */,
 				28CC90F01C4A100A007B7B78 /* CFNetwork.framework */,
-				28CC90EE1C4A1003007B7B78 /* AudioToolbox.framework */,
 				AF3ED976F756A77335BD2298 /* libPods-Cantina.a */,
 				009436B6B8342CCC918E9358 /* libPods-CantinaTests.a */,
 			);
