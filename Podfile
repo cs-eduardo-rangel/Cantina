@@ -2,7 +2,10 @@
 platform :ios, '9.0'
 
 target 'Cantina' do
+    
+pod 'AFNetworking', '~> 3.0.4'
 pod 'Google/SignIn'
+
 end
 
 
