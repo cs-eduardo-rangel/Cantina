@@ -30,7 +30,8 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -51,6 +52,8 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
         let produto = Product()
         self.products.append(produto)
     }
+    
+    
     
     //////////////////////////////////////////////////////////////////////
     // MARK: - UITableViewDataSource
@@ -84,8 +87,7 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
             cell.productImage.image = UIImage(named: imageName)
         }
         
-        cell.productImage.layer.cornerRadius = cell.productImage.frame.size.width / 2
-        cell.productImage.clipsToBounds = true
+        Util.roundImageView(cell.productImage)
         
         return cell
     }

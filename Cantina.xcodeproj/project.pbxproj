@@ -19,6 +19,8 @@
 		28CC91011C4A1060007B7B78 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CC91001C4A1060007B7B78 /* libsqlite3.tbd */; };
 		28CC91041C4A10EF007B7B78 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CC91021C4A10EF007B7B78 /* Bolts.framework */; };
 		28CC91051C4A10EF007B7B78 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CC91031C4A10EF007B7B78 /* Parse.framework */; };
+		28CC91071C4B7464007B7B78 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CC91061C4B7464007B7B78 /* Util.swift */; };
+		28CC91081C4B7464007B7B78 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CC91061C4B7464007B7B78 /* Util.swift */; };
 		5043EA9E6CEC5A30DDE12927 /* libPods-CantinaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 009436B6B8342CCC918E9358 /* libPods-CantinaTests.a */; };
 		98CA00FE1520CF3C5AF14CB5 /* libPods-Cantina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF3ED976F756A77335BD2298 /* libPods-Cantina.a */; };
 		A00B5B331B893B9500349717 /* PurchaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B5B321B893B9500349717 /* PurchaseCell.swift */; };
@@ -93,6 +95,7 @@
 		28CC91001C4A1060007B7B78 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		28CC91021C4A10EF007B7B78 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		28CC91031C4A10EF007B7B78 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		28CC91061C4B7464007B7B78 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		49BC328952897D7EBC326305 /* Pods-CantinaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CantinaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CantinaTests/Pods-CantinaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A00B5B321B893B9500349717 /* PurchaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseCell.swift; sourceTree = "<group>"; };
 		A00B5B371B893EA000349717 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = Model/Product.swift; sourceTree = "<group>"; };
@@ -215,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				A088E4821B88446000A7AA30 /* AppDelegate.swift */,
+				28CC91061C4B7464007B7B78 /* Util.swift */,
 				A00B5B361B893BE900349717 /* Cell */,
 				A00B5B391B893EAC00349717 /* Model */,
 				A00B5B351B893BE200349717 /* ViewController */,
@@ -609,6 +613,7 @@
 				A03998471BDD4D8A00663F40 /* LoginViewController.swift in Sources */,
 				A00B5B331B893B9500349717 /* PurchaseCell.swift in Sources */,
 				A00B5B381B893EA000349717 /* Product.swift in Sources */,
+				28CC91071C4B7464007B7B78 /* Util.swift in Sources */,
 				A088E4851B88446000A7AA30 /* PurchasesViewController.swift in Sources */,
 				A088E4831B88446000A7AA30 /* AppDelegate.swift in Sources */,
 				A0595AD91B8D737C00846350 /* ProductCell.swift in Sources */,
@@ -621,6 +626,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A03998481BDD4D8A00663F40 /* LoginViewController.swift in Sources */,
+				28CC91081C4B7464007B7B78 /* Util.swift in Sources */,
 				A088E4981B88446000A7AA30 /* CantinaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
