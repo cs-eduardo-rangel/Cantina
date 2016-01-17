@@ -10,8 +10,19 @@ import UIKit
 
 class ProductsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    //////////////////////////////////////////////////////////////////////
+    // MARK: IBOutlets
+    
     @IBOutlet weak var tableView: UITableView!
-
+    
+    
+    
+    //////////////////////////////////////////////////////////////////////
+    // MARK: - Variables
+    
+    var products: [Product] = []
+    
+    
     
     //////////////////////////////////////////////////////////////////////
     // MARK: - View Lifecycle
@@ -31,13 +42,14 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
     
     @IBAction func buyProducts(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: { () -> Void in
-            
+            print("Comprando #\(self.products)!", terminator: "")
         })
     }
     
     
     @IBAction func addProduct(sender: AnyObject) {
-        
+        let produto = Product()
+        self.products.append(produto)
     }
     
     //////////////////////////////////////////////////////////////////////
