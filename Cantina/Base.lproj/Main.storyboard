@@ -269,7 +269,7 @@
                                                             <rect key="frame" x="71" y="0.0" width="39" height="43"/>
                                                             <state key="normal" image="Button"/>
                                                             <connections>
-                                                                <action selector="addProduct:" destination="dmZ-Jt-E0D" eventType="touchUpInside" id="ERp-h6-wdp"/>
+                                                                <action selector="addProduct:" destination="dmZ-Jt-E0D" eventType="touchUpInside" id="dHe-m0-ndT"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>

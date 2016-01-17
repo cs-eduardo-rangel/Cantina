@@ -8,25 +8,23 @@
 
 import UIKit
 
-// Match the ObjC symbol name inside Main.storyboard.
-//@objc(LoginViewController)
-
 class LoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
+    
+    //////////////////////////////////////////////////////////////////////
+    // MARK: IBOutlet
     
     @IBOutlet weak var googleSignInButton: GIDSignInButton!
     @IBOutlet weak var indicatorView: UIActivityIndicatorView!
 
     
     
+    //////////////////////////////////////////////////////////////////////
+    // MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.setupGoogleSignInDelegates()
-        
-        // Uncomment to automatically sign in the user.
-        //GIDSignIn.sharedInstance().signInSilently()
-        
-//        self.googleSignInButton.backgroundColor = UIColor.init(red: 101/255, green: 81/255, blue: 158/255, alpha: 1)
+        self.setupGoogleSignIn()
     }
     
 
@@ -36,18 +34,33 @@ class LoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDeleg
     }
     
     
-    func setupGoogleSignInDelegates() {
+    
+    //////////////////////////////////////////////////////////////////////
+    // MARK: - Instance Methods
+    
+    func setupGoogleSignIn() {
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance().uiDelegate = self
+        GIDSignIn.sharedInstance().signInSilently()
+        
+        self.googleSignInButton.backgroundColor = UIColor.init(red: 101/255, green: 81/255, blue: 158/255, alpha: 1)
     }
     
+    
+    
+    //////////////////////////////////////////////////////////////////////
+    // MARK: - IBAction
     
     @IBAction func showActivityIndicator(sender: AnyObject) {
 //        GIDSignIn.sharedInstance().signOut()
+        
         self.indicatorView.startAnimating()
+        
         print(">>>>>>>>>> LOGOUT")
     }
-
+    
+    
+    
     //////////////////////////////////////////////////////////////////////
     // MARK: - Navigation
 
