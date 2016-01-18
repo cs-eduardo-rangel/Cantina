@@ -22,7 +22,6 @@
 		28CC91071C4B7464007B7B78 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CC91061C4B7464007B7B78 /* Util.swift */; };
 		28CC91081C4B7464007B7B78 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CC91061C4B7464007B7B78 /* Util.swift */; };
 		5043EA9E6CEC5A30DDE12927 /* libPods-CantinaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 009436B6B8342CCC918E9358 /* libPods-CantinaTests.a */; };
-		98CA00FE1520CF3C5AF14CB5 /* libPods-Cantina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF3ED976F756A77335BD2298 /* libPods-Cantina.a */; };
 		A00B5B331B893B9500349717 /* PurchaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B5B321B893B9500349717 /* PurchaseCell.swift */; };
 		A00B5B381B893EA000349717 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B5B371B893EA000349717 /* Product.swift */; };
 		A03998471BDD4D8A00663F40 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03998461BDD4D8A00663F40 /* LoginViewController.swift */; };
@@ -61,6 +60,7 @@
 		A0CD77F41B887DF700ED3AC6 /* SF-UI-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0CD77DF1B887DF700ED3AC6 /* SF-UI-Text-Regular.otf */; };
 		A0CD77F51B887DF700ED3AC6 /* SF-UI-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0CD77E01B887DF700ED3AC6 /* SF-UI-Text-Semibold.otf */; };
 		A0CD77F61B887DF700ED3AC6 /* SF-UI-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0CD77E11B887DF700ED3AC6 /* SF-UI-Text-SemiboldItalic.otf */; };
+		ACBE6F03E45A0CDD5B4055E3 /* libPods-Cantina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF3ED976F756A77335BD2298 /* libPods-Cantina.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,7 +160,7 @@
 				28CC90F31C4A1012007B7B78 /* CoreGraphics.framework in Frameworks */,
 				28CC90F11C4A100A007B7B78 /* CFNetwork.framework in Frameworks */,
 				28CC90EF1C4A1003007B7B78 /* AudioToolbox.framework in Frameworks */,
-				98CA00FE1520CF3C5AF14CB5 /* libPods-Cantina.a in Frameworks */,
+				ACBE6F03E45A0CDD5B4055E3 /* libPods-Cantina.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
