@@ -54,6 +54,12 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     
+    @IBAction func close(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: { () -> Void in
+        })
+    }
+    
+    
     
     //////////////////////////////////////////////////////////////////////
     // MARK: - UITableViewDataSource
