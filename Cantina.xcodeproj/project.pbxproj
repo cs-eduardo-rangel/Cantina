@@ -316,10 +316,10 @@
 		A0CD77F71B88869D00ED3AC6 /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				A0CD77F81B8886C900ED3AC6 /* SF-UI */,
 				A088E4891B88446000A7AA30 /* Assets.xcassets */,
 				A088E4861B88446000A7AA30 /* Main.storyboard */,
 				A088E48B1B88446000A7AA30 /* LaunchScreen.storyboard */,
-				A0CD77F81B8886C900ED3AC6 /* SF-UI */,
 			);
 			name = Design;
 			sourceTree = "<group>";

@@ -16,28 +16,29 @@ class PurchasesViewController: UIViewController, UITableViewDelegate, UITableVie
     var debit = 0.0
     
     
+    
     //////////////////////////////////////////////////////////////////////
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        for var i = 0; i < 20; ++i {
+            self.products.append(self.createProduct())
+        }
     }
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     
     
     //////////////////////////////////////////////////////////////////////
     // MARK: - IBActions
-
-    @IBAction func openProductList(sender: AnyObject) {
-        self.products.append(self.createProduct())
-        
-        self.tableView.reloadData()
-    }
+    
+    
     
     
     
@@ -71,21 +72,9 @@ class PurchasesViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        print("You selected cell #\(indexPath.row)!", terminator: "")
-    }
-    
-    
     
     //////////////////////////////////////////////////////////////////////
     // MARK: - Instance Methods
-    
-//    func teste() {
-//        self.products.append(self.createProduct())
-//
-//        self.tableView.reloadData()
-//    }
-
     
     func createProduct() -> Product {
         let product = Product()
