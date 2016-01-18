@@ -83,7 +83,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-item-empty" translatesAutoresizingMaskIntoConstraints="NO" id="Ceu-a9-qnp">
-                                                    <rect key="frame" x="80" y="0.0" width="14" height="46"/>
+                                                    <rect key="frame" x="81" y="0.0" width="14" height="46"/>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="skI-MD-46h">
                                                     <rect key="frame" x="115" y="9" width="64" height="26"/>
@@ -112,12 +112,12 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="4b7-Zf-imG" secondAttribute="trailing" constant="15" id="8N2-Rs-GEW"/>
                                                 <constraint firstItem="LgI-cE-4ds" firstAttribute="top" secondItem="SMK-xR-KAi" secondAttribute="top" constant="15" id="9OC-8m-s5b"/>
-                                                <constraint firstItem="skI-MD-46h" firstAttribute="leading" secondItem="Ceu-a9-qnp" secondAttribute="trailing" constant="21" id="9yM-wA-b0X"/>
+                                                <constraint firstItem="skI-MD-46h" firstAttribute="leading" secondItem="Ceu-a9-qnp" secondAttribute="trailing" constant="20" id="9yM-wA-b0X"/>
                                                 <constraint firstItem="4b7-Zf-imG" firstAttribute="top" secondItem="SMK-xR-KAi" secondAttribute="top" constant="14" id="Hr7-kI-KuI"/>
                                                 <constraint firstItem="skI-MD-46h" firstAttribute="top" secondItem="SMK-xR-KAi" secondAttribute="top" constant="9" id="I7R-WR-V1Q"/>
                                                 <constraint firstItem="Ceu-a9-qnp" firstAttribute="top" secondItem="SMK-xR-KAi" secondAttribute="top" id="OxK-nI-utE"/>
                                                 <constraint firstItem="LgI-cE-4ds" firstAttribute="leading" secondItem="SMK-xR-KAi" secondAttribute="leading" constant="15" id="S8s-7B-19d"/>
-                                                <constraint firstItem="Ceu-a9-qnp" firstAttribute="leading" secondItem="SMK-xR-KAi" secondAttribute="leading" constant="80" id="TgQ-Kh-9eq"/>
+                                                <constraint firstItem="Ceu-a9-qnp" firstAttribute="leading" secondItem="SMK-xR-KAi" secondAttribute="leading" constant="81" id="TgQ-Kh-9eq"/>
                                                 <constraint firstAttribute="bottom" secondItem="Ceu-a9-qnp" secondAttribute="bottom" constant="-2" id="UNe-io-1XQ"/>
                                                 <constraint firstAttribute="bottom" secondItem="LgI-cE-4ds" secondAttribute="bottom" constant="12" id="jrM-hh-iTA"/>
                                                 <constraint firstAttribute="bottom" secondItem="4b7-Zf-imG" secondAttribute="bottom" constant="13" id="kMe-V8-ikS"/>
@@ -316,7 +316,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="buyProducts:" destination="dmZ-Jt-E0D" eventType="touchUpInside" id="zz9-ph-CZy"/>
+                                    <action selector="buyProducts:" destination="dmZ-Jt-E0D" eventType="touchUpInside" id="uFW-y0-16v"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOY-s5-njm">
