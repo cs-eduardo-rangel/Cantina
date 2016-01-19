@@ -38,7 +38,11 @@ class PurchasesViewController: UIViewController, UITableViewDelegate, UITableVie
     //////////////////////////////////////////////////////////////////////
     // MARK: - IBActions
     
-    
+    @IBAction func logout(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: { () -> Void in
+            GIDSignIn.sharedInstance().signOut()
+        })
+    }
     
     
     
