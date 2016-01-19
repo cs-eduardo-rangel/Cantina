@@ -13,7 +13,6 @@ class LoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDeleg
     //////////////////////////////////////////////////////////////////////
     // MARK: IBOutlet
     
-    @IBOutlet weak var googleSignInButton: GIDSignInButton!
     @IBOutlet weak var indicatorView: UIActivityIndicatorView!
 
     
@@ -30,7 +29,6 @@ class LoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDeleg
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     
@@ -42,8 +40,6 @@ class LoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDeleg
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().signInSilently()
-        
-        self.googleSignInButton.backgroundColor = UIColor.init(red: 101/255, green: 81/255, blue: 158/255, alpha: 1)
     }
     
     
@@ -51,12 +47,10 @@ class LoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDeleg
     //////////////////////////////////////////////////////////////////////
     // MARK: - IBAction
     
-    @IBAction func showActivityIndicator(sender: AnyObject) {
-//        GIDSignIn.sharedInstance().signOut()
-        
+    @IBAction func login(sender: AnyObject) {
         self.indicatorView.startAnimating()
         
-        print(">>>>>>>>>> LOGOUT")
+        GIDSignIn.sharedInstance().signIn()
     }
     
     
@@ -64,33 +58,29 @@ class LoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDeleg
     //////////////////////////////////////////////////////////////////////
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+
     }
 
     
-
+    
     //////////////////////////////////////////////////////////////////////
     // MARK: - GIDSignInDelegate
     
     func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!, withError error: NSError!) {
-        print(">>>>>>>>>> signIn:didSignInForUser:withError")
-        
         if (error == nil) {
+            self.performSegueWithIdentifier("SegueToPurchases", sender: self)
+
             self.indicatorView.stopAnimating()
             
-            self.performSegueWithIdentifier("SegueToPurchases", sender: self)
-            
-            // Perform any operations on signed in user here.
 //            let userId = user.userID                  // For client-side use only!
 //            let idToken = user.authentication.idToken // Safe to send to the server
 //            let name = user.profile.name
 //            let email = user.profile.email
             
-//            NSNotificationCenter.defaultCenter().postNotificationName("ToggleAuthUINotification", object: nil, userInfo: ["statusText": "Signed in user:\n\(name)"])
-        } else {
+//            NSNotificationCenter.defaultCenter().postNotificationName("ToggleAuthUINotification", object: nil, userInfo: ["statusText": "Sign In do Usuário:\n\(name)"])
+        }
+        else {
             self.indicatorView.stopAnimating()
             
             print(">>>>>>>>>> \(error.localizedDescription)")
@@ -101,14 +91,10 @@ class LoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDeleg
     
     
     func signIn(signIn: GIDSignIn!, didDisconnectWithUser user:GIDGoogleUser!, withError error: NSError!) {
-        // Perform any operations when the user disconnects from app here.
-        
         print(">>>>>>>>>> signIn:didDisconnectWithUser:withError")
         
-//        NSNotificationCenter.defaultCenter().postNotificationName("ToggleAuthUINotification", object: nil, userInfo: ["statusText": "User has disconnected."])
+//        NSNotificationCenter.defaultCenter().postNotificationName("ToggleAuthUINotification", object: nil, userInfo: ["statusText": "Usuário disconectado."])
     }
-    
-    
     
     
     
