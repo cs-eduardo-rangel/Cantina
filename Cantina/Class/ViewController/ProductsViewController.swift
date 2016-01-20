@@ -119,14 +119,6 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
 //        cell.purchaseTime?.text = product.purchaseTime
 //        cell.purchaseDate?.text = product.purchaseDate
         
-        let foods = ["Food1", "Food2", "Food3"]
-        
-        for imageName in foods {
-            cell.productImage.image = UIImage(named: imageName)
-        }
-        
-        Util.roundImageView(cell.productImage)
-        
         return cell
     }
     

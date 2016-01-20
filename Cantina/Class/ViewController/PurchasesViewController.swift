@@ -39,9 +39,24 @@ class PurchasesViewController: UIViewController, UITableViewDelegate, UITableVie
     // MARK: - IBActions
     
     @IBAction func logout(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: { () -> Void in
-            GIDSignIn.sharedInstance().signOut()
-        })
+        let alertController = UIAlertController(title: "Logout", message: "Quer mesmo sair?", preferredStyle: .Alert)
+        
+        let cancelAction = UIAlertAction(title: "Não", style: .Cancel) { (action) in
+            
+        }
+        
+        let OKAction = UIAlertAction(title: "Sim", style: .Default) { (action) in
+            self.dismissViewControllerAnimated(true, completion: { () -> Void in
+                GIDSignIn.sharedInstance().signOut()
+            })
+        }
+        
+        alertController.addAction(OKAction)
+        alertController.addAction(cancelAction)
+        
+        self.presentViewController(alertController, animated: true) {
+            
+        }
     }
     
     
@@ -97,7 +112,7 @@ class PurchasesViewController: UIViewController, UITableViewDelegate, UITableVie
         let month = components.month
         
         product.purchaseTime = String(format: "%d:%.2dh", hour, minute)
-        product.purchaseDate = String(format: "%@ %d", self.monthStringWithMonth(month), day)
+        product.purchaseDate = String(format: "%d %@", day, self.monthStringWithMonth(month))
         
         let formatter = NSNumberFormatter()
         formatter.numberStyle = .CurrencyStyle
