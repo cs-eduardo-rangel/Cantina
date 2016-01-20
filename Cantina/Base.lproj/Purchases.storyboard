@@ -35,7 +35,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="rU3-Fd-PsW">
-                                <rect key="frame" x="80" y="70" width="232" height="62"/>
+                                <rect key="frame" x="70" y="70" width="232" height="62"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VALOR A PAGAR" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7k-Tq-a32">
                                         <rect key="frame" x="0.0" y="0.0" width="86" height="14"/>
@@ -76,52 +76,52 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jul 99" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgI-cE-4ds">
-                                                    <rect key="frame" x="15" y="15" width="40" height="17"/>
-                                                    <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="14"/>
-                                                    <color key="textColor" red="0.396078431372549" green="0.31764705882352939" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-item-empty" translatesAutoresizingMaskIntoConstraints="NO" id="Ceu-a9-qnp">
+                                                    <rect key="frame" x="80" y="0.0" width="14" height="46"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mate Leão" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Td1-ro-DsP">
+                                                    <rect key="frame" x="115" y="14" width="64" height="17"/>
+                                                    <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                                                    <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-item-empty" translatesAutoresizingMaskIntoConstraints="NO" id="Ceu-a9-qnp">
-                                                    <rect key="frame" x="81" y="0.0" width="14" height="46"/>
-                                                </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="skI-MD-46h">
-                                                    <rect key="frame" x="115" y="9" width="64" height="26"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="4:20h" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GiA-3z-oss">
-                                                            <rect key="frame" x="0.0" y="0.0" width="24" height="9"/>
-                                                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="9"/>
-                                                            <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mate Leão" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Td1-ro-DsP">
-                                                            <rect key="frame" x="0.0" y="9" width="64" height="17"/>
-                                                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
-                                                            <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 200,60" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4b7-Zf-imG">
                                                     <rect key="frame" x="517" y="14" width="68" height="17"/>
                                                     <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="14"/>
                                                     <color key="textColor" red="0.29411764705882354" green="0.29411764705882354" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="CeC-ZQ-eCF">
+                                                    <rect key="frame" x="15" y="3" width="40" height="28"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="16:20h" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GiA-3z-oss">
+                                                            <rect key="frame" x="12" y="0.0" width="28" height="11"/>
+                                                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="9"/>
+                                                            <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jul 99" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgI-cE-4ds">
+                                                            <rect key="frame" x="0.0" y="11" width="40" height="17"/>
+                                                            <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="14"/>
+                                                            <color key="textColor" red="0.396078431372549" green="0.31764705882352939" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="4b7-Zf-imG" secondAttribute="trailing" constant="15" id="8N2-Rs-GEW"/>
-                                                <constraint firstItem="LgI-cE-4ds" firstAttribute="top" secondItem="SMK-xR-KAi" secondAttribute="top" constant="15" id="9OC-8m-s5b"/>
-                                                <constraint firstItem="skI-MD-46h" firstAttribute="leading" secondItem="Ceu-a9-qnp" secondAttribute="trailing" constant="20" id="9yM-wA-b0X"/>
+                                                <constraint firstItem="Td1-ro-DsP" firstAttribute="leading" secondItem="Ceu-a9-qnp" secondAttribute="trailing" constant="21" id="BVX-hP-H4c"/>
+                                                <constraint firstItem="Td1-ro-DsP" firstAttribute="top" secondItem="SMK-xR-KAi" secondAttribute="top" constant="14" id="CYC-K0-hRP"/>
                                                 <constraint firstItem="4b7-Zf-imG" firstAttribute="top" secondItem="SMK-xR-KAi" secondAttribute="top" constant="14" id="Hr7-kI-KuI"/>
-                                                <constraint firstItem="skI-MD-46h" firstAttribute="top" secondItem="SMK-xR-KAi" secondAttribute="top" constant="9" id="I7R-WR-V1Q"/>
+                                                <constraint firstItem="CeC-ZQ-eCF" firstAttribute="top" secondItem="SMK-xR-KAi" secondAttribute="top" constant="3" id="Jof-cL-9qC"/>
                                                 <constraint firstItem="Ceu-a9-qnp" firstAttribute="top" secondItem="SMK-xR-KAi" secondAttribute="top" id="OxK-nI-utE"/>
-                                                <constraint firstItem="LgI-cE-4ds" firstAttribute="leading" secondItem="SMK-xR-KAi" secondAttribute="leading" constant="15" id="S8s-7B-19d"/>
-                                                <constraint firstItem="Ceu-a9-qnp" firstAttribute="leading" secondItem="SMK-xR-KAi" secondAttribute="leading" constant="81" id="TgQ-Kh-9eq"/>
+                                                <constraint firstItem="Ceu-a9-qnp" firstAttribute="leading" secondItem="SMK-xR-KAi" secondAttribute="leading" constant="80" id="TgQ-Kh-9eq"/>
                                                 <constraint firstAttribute="bottom" secondItem="Ceu-a9-qnp" secondAttribute="bottom" constant="-2" id="UNe-io-1XQ"/>
-                                                <constraint firstAttribute="bottom" secondItem="LgI-cE-4ds" secondAttribute="bottom" constant="12" id="jrM-hh-iTA"/>
+                                                <constraint firstAttribute="bottom" secondItem="CeC-ZQ-eCF" secondAttribute="bottom" constant="13" id="Wki-sE-8la"/>
+                                                <constraint firstItem="CeC-ZQ-eCF" firstAttribute="leading" secondItem="SMK-xR-KAi" secondAttribute="leading" constant="15" id="bUE-xZ-AYM"/>
+                                                <constraint firstAttribute="bottom" secondItem="Td1-ro-DsP" secondAttribute="bottom" constant="13" id="gSy-M7-5KN"/>
                                                 <constraint firstAttribute="bottom" secondItem="4b7-Zf-imG" secondAttribute="bottom" constant="13" id="kMe-V8-ikS"/>
-                                                <constraint firstAttribute="bottom" secondItem="skI-MD-46h" secondAttribute="bottom" constant="9" id="pU7-dT-NIQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <accessibility key="accessibilityConfiguration" identifier=""/>
@@ -155,7 +155,7 @@
                             <constraint firstItem="ujD-jZ-5tz" firstAttribute="top" secondItem="ZLJ-Pq-e2G" secondAttribute="bottom" id="1eA-ww-gfl"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ujD-jZ-5tz" secondAttribute="bottom" id="7Hq-U8-WLY"/>
                             <constraint firstAttribute="trailing" secondItem="NdR-Pi-9E0" secondAttribute="trailing" id="9p6-wb-rDP"/>
-                            <constraint firstItem="rU3-Fd-PsW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="EP3-rp-wgh"/>
+                            <constraint firstItem="rU3-Fd-PsW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="EP3-rp-wgh"/>
                             <constraint firstItem="NdR-Pi-9E0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="L1g-ny-CSL"/>
                             <constraint firstItem="ZLJ-Pq-e2G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="70" id="NBe-mT-AlF"/>
                             <constraint firstItem="NdR-Pi-9E0" firstAttribute="top" secondItem="rU3-Fd-PsW" secondAttribute="bottom" constant="88" id="dGE-eM-3Bn"/>
