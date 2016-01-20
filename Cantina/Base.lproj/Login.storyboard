@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="okc-xb-SDa">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="3ux-A2-o1q">
+            <objects>
+                <viewController id="okc-xb-SDa" customClass="LoginViewController" customModule="Cantina" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zQI-Ib-Ipy"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q61-CV-efM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qK2-xh-Qgf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_app_cantina" translatesAutoresizingMaskIntoConstraints="NO" id="Iis-Pe-00j">
+                                <rect key="frame" x="175" y="80" width="250" height="275"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Yoh-Fd-5ZO"/>
+                                    <constraint firstAttribute="height" constant="275" id="ycr-rS-uTz"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U64-rn-ffB">
+                                <rect key="frame" x="20" y="460" width="560" height="50"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.31764705882352939" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2yM-Zj-HIh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="15"/>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="okc-xb-SDa" eventType="touchUpInside" id="RfC-A1-ynV"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="hpX-Gu-vKm">
+                                <rect key="frame" x="282" y="518" width="37" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="Vw0-gq-SWW"/>
+                                    <constraint firstAttribute="width" constant="37" id="nDh-yv-nar"/>
+                                </constraints>
+                                <color key="color" red="0.32156862745098042" green="0.23137254901960785" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="U64-rn-ffB" firstAttribute="leading" secondItem="qK2-xh-Qgf" secondAttribute="leading" constant="20" id="HPJ-kW-vQC"/>
+                            <constraint firstItem="hpX-Gu-vKm" firstAttribute="centerX" secondItem="qK2-xh-Qgf" secondAttribute="centerX" id="Xwb-yf-Z01"/>
+                            <constraint firstAttribute="trailing" secondItem="U64-rn-ffB" secondAttribute="trailing" constant="20" id="hop-xq-Cjf"/>
+                            <constraint firstItem="Iis-Pe-00j" firstAttribute="top" secondItem="zQI-Ib-Ipy" secondAttribute="bottom" constant="60" id="s1S-Y8-ieR"/>
+                            <constraint firstItem="U64-rn-ffB" firstAttribute="top" secondItem="Iis-Pe-00j" secondAttribute="bottom" constant="105" id="xOc-6P-tF0"/>
+                            <constraint firstItem="hpX-Gu-vKm" firstAttribute="top" secondItem="U64-rn-ffB" secondAttribute="bottom" constant="8" id="xSm-rs-jUf"/>
+                            <constraint firstItem="Iis-Pe-00j" firstAttribute="centerX" secondItem="qK2-xh-Qgf" secondAttribute="centerX" id="zl2-iQ-tg9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="indicatorView" destination="hpX-Gu-vKm" id="oAV-Zb-7fs"/>
+                        <segue destination="Kpt-G4-Byf" kind="show" identifier="SegueToPurchases" id="vP3-5Q-Qgc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NRK-Ur-ZKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1238" y="-555"/>
+        </scene>
+        <!--Purchases-->
+        <scene sceneID="jDj-Cn-vHY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Purchases" id="Kpt-G4-Byf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DIV-Jz-yII" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-717" y="-555"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo_app_cantina" width="591" height="647"/>
+    </resources>
+</document>
