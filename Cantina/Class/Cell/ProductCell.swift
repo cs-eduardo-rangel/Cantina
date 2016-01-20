@@ -12,19 +12,40 @@ class ProductCell: UITableViewCell {
     @IBOutlet weak var productImage: UIImageView!
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var productPriceLabel: UILabel!
+    @IBOutlet weak var productQuantityLabel: UILabel!
     
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
     
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+    }
+    
+    
+    
+    @IBAction func decreaseProduct(sender: AnyObject) {
+        if self.productQuantityLabel.text == "0" {
+            return
+        }
         
-        // Configure the view for the selected state
+        var productQuantity = Int(self.productQuantityLabel.text!)
+        print("\(productQuantity!--)")
+        self.productQuantityLabel.text = "\(productQuantity!--)"
+    }
+    
+    
+    @IBAction func increaseProduct(sender: AnyObject) {
+        if self.productQuantityLabel.text == "10" {
+            return
+        }
+        
+        var productQuantity = Int(self.productQuantityLabel.text!)
+        print("\(productQuantity!++)")
+        self.productQuantityLabel.text = "\(productQuantity!++)"
     }
     
     

@@ -83,16 +83,6 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     
-    @IBAction func decreaseProduct(sender: AnyObject) {
-        
-    }
-    
-    
-    @IBAction func increaseProduct(sender: AnyObject) {
-        
-    }
-    
-    
     
     //////////////////////////////////////////////////////////////////////
     // MARK: - Instance Methods
