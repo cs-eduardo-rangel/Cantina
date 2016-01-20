@@ -39,8 +39,6 @@
 		28CC90FD1C4A104F007B7B78 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CC90FC1C4A104F007B7B78 /* SystemConfiguration.framework */; };
 		28CC90FF1C4A1058007B7B78 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CC90FE1C4A1058007B7B78 /* libz.tbd */; };
 		28CC91011C4A1060007B7B78 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CC91001C4A1060007B7B78 /* libsqlite3.tbd */; };
-		28CC91041C4A10EF007B7B78 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CC91021C4A10EF007B7B78 /* Bolts.framework */; };
-		28CC91051C4A10EF007B7B78 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CC91031C4A10EF007B7B78 /* Parse.framework */; };
 		28CC91071C4B7464007B7B78 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CC91061C4B7464007B7B78 /* Util.swift */; };
 		28CC91081C4B7464007B7B78 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CC91061C4B7464007B7B78 /* Util.swift */; };
 		5043EA9E6CEC5A30DDE12927 /* libPods-CantinaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 009436B6B8342CCC918E9358 /* libPods-CantinaTests.a */; };
@@ -118,8 +116,6 @@
 		28CC90FC1C4A104F007B7B78 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		28CC90FE1C4A1058007B7B78 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		28CC91001C4A1060007B7B78 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		28CC91021C4A10EF007B7B78 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		28CC91031C4A10EF007B7B78 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		28CC91061C4B7464007B7B78 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		49BC328952897D7EBC326305 /* Pods-CantinaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CantinaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CantinaTests/Pods-CantinaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A00B5B321B893B9500349717 /* PurchaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseCell.swift; sourceTree = "<group>"; };
@@ -166,6 +162,7 @@
 		AF3ED976F756A77335BD2298 /* libPods-Cantina.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cantina.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B297D03611A8D7F220340E0E /* Pods-Cantina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cantina.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cantina/Pods-Cantina.debug.xcconfig"; sourceTree = "<group>"; };
 		B73BD2A4F18ADB1A49C8762F /* Pods-Cantina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cantina.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cantina/Pods-Cantina.release.xcconfig"; sourceTree = "<group>"; };
+		FD7C4D761C5026F10075F7F7 /* libParse.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libParse.a; path = "Pods/../build/Debug-iphoneos/libParse.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,10 +173,8 @@
 				28CC91011C4A1060007B7B78 /* libsqlite3.tbd in Frameworks */,
 				28CC90FF1C4A1058007B7B78 /* libz.tbd in Frameworks */,
 				28CC90FD1C4A104F007B7B78 /* SystemConfiguration.framework in Frameworks */,
-				28CC91041C4A10EF007B7B78 /* Bolts.framework in Frameworks */,
 				28CC90FB1C4A1046007B7B78 /* StoreKit.framework in Frameworks */,
 				28CC90F91C4A103F007B7B78 /* Security.framework in Frameworks */,
-				28CC91051C4A10EF007B7B78 /* Parse.framework in Frameworks */,
 				28CC90F71C4A1035007B7B78 /* QuartzCore.framework in Frameworks */,
 				28CC90F51C4A102E007B7B78 /* CoreLocation.framework in Frameworks */,
 				28CC90F31C4A1012007B7B78 /* CoreGraphics.framework in Frameworks */,
@@ -232,12 +227,11 @@
 		774720658CC342C97D46287E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FD7C4D761C5026F10075F7F7 /* libParse.a */,
 				2896D4C71C4D971F009AE9BE /* JSSAlertView.swift */,
-				28CC90EE1C4A1003007B7B78 /* AudioToolbox.framework */,
-				28CC91021C4A10EF007B7B78 /* Bolts.framework */,
-				28CC91031C4A10EF007B7B78 /* Parse.framework */,
 				28CC91001C4A1060007B7B78 /* libsqlite3.tbd */,
 				28CC90FE1C4A1058007B7B78 /* libz.tbd */,
+				28CC90EE1C4A1003007B7B78 /* AudioToolbox.framework */,
 				28CC90FC1C4A104F007B7B78 /* SystemConfiguration.framework */,
 				28CC90FA1C4A1046007B7B78 /* StoreKit.framework */,
 				28CC90F81C4A103F007B7B78 /* Security.framework */,
@@ -841,6 +835,10 @@
 				);
 				INFOPLIST_FILE = Cantina/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.concretesolutions.Cantina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -862,6 +860,10 @@
 				);
 				INFOPLIST_FILE = Cantina/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.concretesolutions.Cantina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

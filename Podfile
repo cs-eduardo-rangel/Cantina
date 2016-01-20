@@ -5,6 +5,7 @@ target 'Cantina' do
     
 pod 'AFNetworking', '~> 3.0.4'
 pod 'Google/SignIn'
+pod 'Parse'
 
 end
 
