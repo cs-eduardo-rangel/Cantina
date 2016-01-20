@@ -73,6 +73,9 @@
                                                             <state key="normal" title="-">
                                                                 <color key="titleColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="decreaseProduct:" destination="dmZ-Jt-E0D" eventType="touchUpInside" id="6id-6P-eON"/>
+                                                            </connections>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKF-Dp-kcu">
                                                             <rect key="frame" x="35" y="0.0" width="30" height="42"/>
@@ -86,6 +89,9 @@
                                                             <state key="normal" title="+">
                                                                 <color key="titleColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="increaseProduct:" destination="dmZ-Jt-E0D" eventType="touchUpInside" id="LeP-jW-ItN"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </stackView>
