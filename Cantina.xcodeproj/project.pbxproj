@@ -83,6 +83,7 @@
 		ACBE6F03E45A0CDD5B4055E3 /* libPods-Cantina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF3ED976F756A77335BD2298 /* libPods-Cantina.a */; };
 		FDBA26A41C51566E009DF6D0 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBA26A31C51566E009DF6D0 /* Credentials.swift */; };
 		FDBA26A61C515B4A009DF6D0 /* Sale.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBA26A51C515B4A009DF6D0 /* Sale.swift */; };
+		FDBA26A91C516B93009DF6D0 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBA26A81C516B93009DF6D0 /* ProductService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +168,7 @@
 		FD7C4D761C5026F10075F7F7 /* libParse.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libParse.a; path = "Pods/../build/Debug-iphoneos/libParse.a"; sourceTree = "<group>"; };
 		FDBA26A31C51566E009DF6D0 /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Credentials.swift; path = Model/Credentials.swift; sourceTree = "<group>"; };
 		FDBA26A51C515B4A009DF6D0 /* Sale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sale.swift; path = Model/Sale.swift; sourceTree = "<group>"; };
+		FDBA26A81C516B93009DF6D0 /* ProductService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductService.swift; path = Service/ProductService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +259,7 @@
 				A00B5B361B893BE900349717 /* Cell */,
 				A00B5B391B893EAC00349717 /* Model */,
 				A00B5B351B893BE200349717 /* ViewController */,
+				FDBA26A71C516B02009DF6D0 /* Service */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -386,6 +389,14 @@
 				A0CD77E11B887DF700ED3AC6 /* SF-UI-Text-SemiboldItalic.otf */,
 			);
 			name = "SF-UI";
+			sourceTree = "<group>";
+		};
+		FDBA26A71C516B02009DF6D0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FDBA26A81C516B93009DF6D0 /* ProductService.swift */,
+			);
+			name = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -657,6 +668,7 @@
 				FDBA26A41C51566E009DF6D0 /* Credentials.swift in Sources */,
 				FDBA26A61C515B4A009DF6D0 /* Sale.swift in Sources */,
 				2896D4C81C4D971F009AE9BE /* JSSAlertView.swift in Sources */,
+				FDBA26A91C516B93009DF6D0 /* ProductService.swift in Sources */,
 				A00B5B381B893EA000349717 /* Product.swift in Sources */,
 				28CC91071C4B7464007B7B78 /* Util.swift in Sources */,
 				A088E4851B88446000A7AA30 /* PurchasesViewController.swift in Sources */,

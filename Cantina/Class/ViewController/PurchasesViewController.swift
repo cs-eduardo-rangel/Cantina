@@ -15,17 +15,12 @@ class PurchasesViewController: UIViewController, UITableViewDelegate, UITableVie
     var products: [Product] = []
     var debit = 0.0
     
-    
-    
     //////////////////////////////////////////////////////////////////////
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for var i = 0; i < 20; ++i {
-            self.products.append(self.createProduct())
-        }
     }
     
     

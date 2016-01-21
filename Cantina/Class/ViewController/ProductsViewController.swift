@@ -29,6 +29,11 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ProductService.getAllProducts({ (objects, error) -> Void in
+            self.products = objects as! [Product]
+            self.tableView.reloadData()
+        })
     }
     
     
@@ -97,7 +102,7 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
     // MARK: - UITableViewDataSource
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10 //self.products.count;
+        return self.products.count
     }
     
     
@@ -114,10 +119,9 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
         formatter.numberStyle = .CurrencyStyle
         formatter.locale = NSLocale(localeIdentifier: "pt_BR")
         
-//        cell.price?.text = formatter.stringFromNumber(product.price)
-//        cell.name?.text = product.name
-//        cell.purchaseTime?.text = product.purchaseTime
-//        cell.purchaseDate?.text = product.purchaseDate
+        cell.productPriceLabel.text = formatter.stringFromNumber(self.products[indexPath.row].price)
+        cell.productNameLabel?.text = self.products[indexPath.row].name
+
         
         return cell
     }
