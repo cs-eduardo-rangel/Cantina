@@ -15,6 +15,16 @@ class Sale: PFObject, PFSubclassing {
     @NSManaged var buyer: Credentials
     @NSManaged var paid: Bool
     
+    
+    override class func initialize() {
+        struct Static {
+            static var onceToken : dispatch_once_t = 0;
+        }
+        dispatch_once(&Static.onceToken) {
+            self.registerSubclass()
+        }
+    }
+    
     class func parseClassName() -> String{
         return "Sale"
     }

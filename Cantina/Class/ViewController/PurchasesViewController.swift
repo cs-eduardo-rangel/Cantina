@@ -84,8 +84,8 @@ class PurchasesViewController: UIViewController, UITableViewDelegate, UITableVie
         
         cell.price?.text = formatter.stringFromNumber(product.price)
         cell.name?.text = product.name
-        cell.purchaseTime?.text = product.purchaseTime
-        cell.purchaseDate?.text = product.purchaseDate
+//        cell.purchaseTime?.text = product.purchaseTime
+//        cell.purchaseDate?.text = product.purchaseDate
         
         return cell
     }
@@ -111,14 +111,14 @@ class PurchasesViewController: UIViewController, UITableViewDelegate, UITableVie
         let day = components.day
         let month = components.month
         
-        product.purchaseTime = String(format: "%d:%.2dh", hour, minute)
-        product.purchaseDate = String(format: "%d %@", day, self.monthStringWithMonth(month))
+//        product.purchaseTime = String(format: "%d:%.2dh", hour, minute)
+//        product.purchaseDate = String(format: "%d %@", day, self.monthStringWithMonth(month))
         
         let formatter = NSNumberFormatter()
         formatter.numberStyle = .CurrencyStyle
         formatter.locale = NSLocale(localeIdentifier: "pt_BR")
         
-        self.debit += product.price
+        self.debit += product.price.doubleValue
 
         self.debitLabel.text = formatter.stringFromNumber(self.debit)
         

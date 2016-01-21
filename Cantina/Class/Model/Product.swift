@@ -16,6 +16,15 @@ class Product: PFObject, PFSubclassing {
     @NSManaged var amount: NSNumber
     @NSManaged var image: PFFile
     
+    override class func initialize() {
+        struct Static {
+            static var onceToken : dispatch_once_t = 0;
+        }
+        dispatch_once(&Static.onceToken) {
+            self.registerSubclass()
+        }
+    }
+    
     class func parseClassName() -> String{
         return "Product"
     }
