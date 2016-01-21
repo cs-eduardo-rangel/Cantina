@@ -81,6 +81,8 @@
 		A0CD77F51B887DF700ED3AC6 /* SF-UI-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0CD77E01B887DF700ED3AC6 /* SF-UI-Text-Semibold.otf */; };
 		A0CD77F61B887DF700ED3AC6 /* SF-UI-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0CD77E11B887DF700ED3AC6 /* SF-UI-Text-SemiboldItalic.otf */; };
 		ACBE6F03E45A0CDD5B4055E3 /* libPods-Cantina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF3ED976F756A77335BD2298 /* libPods-Cantina.a */; };
+		FDBA26A41C51566E009DF6D0 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBA26A31C51566E009DF6D0 /* Credentials.swift */; };
+		FDBA26A61C515B4A009DF6D0 /* Sale.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBA26A51C515B4A009DF6D0 /* Sale.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +165,8 @@
 		B297D03611A8D7F220340E0E /* Pods-Cantina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cantina.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cantina/Pods-Cantina.debug.xcconfig"; sourceTree = "<group>"; };
 		B73BD2A4F18ADB1A49C8762F /* Pods-Cantina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cantina.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cantina/Pods-Cantina.release.xcconfig"; sourceTree = "<group>"; };
 		FD7C4D761C5026F10075F7F7 /* libParse.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libParse.a; path = "Pods/../build/Debug-iphoneos/libParse.a"; sourceTree = "<group>"; };
+		FDBA26A31C51566E009DF6D0 /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Credentials.swift; path = Model/Credentials.swift; sourceTree = "<group>"; };
+		FDBA26A51C515B4A009DF6D0 /* Sale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sale.swift; path = Model/Sale.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +284,8 @@
 			isa = PBXGroup;
 			children = (
 				A00B5B371B893EA000349717 /* Product.swift */,
+				FDBA26A31C51566E009DF6D0 /* Credentials.swift */,
+				FDBA26A51C515B4A009DF6D0 /* Sale.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -648,6 +654,8 @@
 			files = (
 				A03998471BDD4D8A00663F40 /* LoginViewController.swift in Sources */,
 				A00B5B331B893B9500349717 /* PurchaseCell.swift in Sources */,
+				FDBA26A41C51566E009DF6D0 /* Credentials.swift in Sources */,
+				FDBA26A61C515B4A009DF6D0 /* Sale.swift in Sources */,
 				2896D4C81C4D971F009AE9BE /* JSSAlertView.swift in Sources */,
 				A00B5B381B893EA000349717 /* Product.swift in Sources */,
 				28CC91071C4B7464007B7B78 /* Util.swift in Sources */,

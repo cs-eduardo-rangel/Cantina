@@ -8,10 +8,16 @@
 
 import UIKit
 
-class Product: NSObject {
-    var name = ""
-    var price = 0.0
-    var purchaseDate = ""
-    var purchaseTime = ""
+class Product: PFObject, PFSubclassing {
+    
+    @NSManaged var name: String
+    @NSManaged var barCode: String
+    @NSManaged var price: NSNumber
+    @NSManaged var amount: NSNumber
+    @NSManaged var image: PFFile
+    
+    class func parseClassName() -> String{
+        return "Product"
+    }
 
 }
