@@ -23,12 +23,16 @@ class CredentialsService: NSObject {
         credentialsQuery.whereKey("googlePlusId", equalTo: user.userID)
         credentialsQuery.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
             if objects?.count > 0{
+                
+                self.addCredentialsToInstalation(objects?.first as! Credentials)
                 completion(true,"")
             }else{
                 //creates new User
                 self.createUserCredentials(user, creationCompletion: { (success, userCredentials) -> Void in
                     if(success){
                         //STORE CREDENTIALS IN APP
+                        self.addCredentialsToInstalation(userCredentials)
+                        
                         completion(true,"")
                     }else{
                         completion(false, "Não foi possível criar usuário.\n Tente novamente")
@@ -52,5 +56,10 @@ class CredentialsService: NSObject {
         newUser.saveInBackgroundWithBlock { (success, error) -> Void in
             creationCompletion(success, newUser)
         }
+    }
+    
+    class func addCredentialsToInstalation(credentials:Credentials){
+        PFInstallation.currentInstallation()["userCredentials"] = credentials
+        PFInstallation.currentInstallation().saveInBackground()
     }
 }
