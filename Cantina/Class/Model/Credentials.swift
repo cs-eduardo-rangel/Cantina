@@ -13,7 +13,7 @@ class Credentials: PFObject, PFSubclassing {
     @NSManaged var name: String
     @NSManaged var email: String
     @NSManaged var googlePlusId: String
-    @NSManaged var image: PFFile
+    @NSManaged var image: String
     
     
     override class func initialize() {
