@@ -69,25 +69,22 @@ class LoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDeleg
     
     func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!, withError error: NSError!) {
         if (error == nil) {
-            self.performSegueWithIdentifier("SegueToPurchases", sender: self)
-
-            self.indicatorView.stopAnimating()
             
-//            let userId = user.userID                  // For client-side use only!
-//            let idToken = user.authentication.idToken // Safe to send to the server
-//            let name = user.profile.name
-//            let email = user.profile.email
-            
-//            NSNotificationCenter.defaultCenter().postNotificationName("ToggleAuthUINotification", object: nil, userInfo: ["statusText": "Sign In do Usuário:\n\(name)"])
-        }
-        else {
-            self.indicatorView.stopAnimating()
-            
-            print(">>>>>>>>>> \(error.localizedDescription)")
-            
-//            NSNotificationCenter.defaultCenter().postNotificationName("ToggleAuthUINotification", object: nil, userInfo: nil)
+            CredentialsService.logInUser(user, completion: { (success, error) -> Void in
+                
+                self.indicatorView.stopAnimating()
+                if(success){
+                    self.performSegueWithIdentifier("SegueToPurchases", sender: self)
+                }else {
+                    let alertController = UIAlertController.init(title: ":(", message: error as String, preferredStyle: .Alert)
+                    let okBtn = UIAlertAction.init(title: "Ok", style: .Cancel, handler: nil)
+                    alertController.addAction(okBtn)
+                    self.presentViewController(alertController, animated: true, completion: nil)
+                }
+            })
         }
     }
+                
     
     
     func signIn(signIn: GIDSignIn!, didDisconnectWithUser user:GIDGoogleUser!, withError error: NSError!) {
