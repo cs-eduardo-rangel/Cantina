@@ -8,13 +8,17 @@
 
 import UIKit
 
+protocol ProductCellDelegate {
+    func addProductToBuy(product:Product)
+    func removeProductToBuy(product:Product)
+}
+
 class ProductCell: UITableViewCell {
     @IBOutlet weak var productImage: UIImageView!
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var productPriceLabel: UILabel!
     @IBOutlet weak var productQuantityLabel: UILabel!
-    
-    
+    var delegate:ProductCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,8 +28,6 @@ class ProductCell: UITableViewCell {
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-    
-    
     
     @IBAction func decreaseProduct(sender: AnyObject) {
         if self.productQuantityLabel.text == "0" {
@@ -37,7 +39,6 @@ class ProductCell: UITableViewCell {
         self.productQuantityLabel.text = "\(productQuantity!--)"
     }
     
-    
     @IBAction func increaseProduct(sender: AnyObject) {
         if self.productQuantityLabel.text == "10" {
             return
@@ -47,7 +48,5 @@ class ProductCell: UITableViewCell {
         print("\(productQuantity!++)")
         self.productQuantityLabel.text = "\(productQuantity!++)"
     }
-    
-    
     
 }

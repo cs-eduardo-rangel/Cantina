@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProductsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ProductsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, ProductCellDelegate {
     
     //////////////////////////////////////////////////////////////////////
     // MARK: IBOutlets
@@ -20,8 +20,9 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
     //////////////////////////////////////////////////////////////////////
     // MARK: - Variables
     
+    var sales: NSMutableArray! = NSMutableArray()
     var products: [Product] = []
-    
+    var credential: Credentials! = Credentials()
     
     
     //////////////////////////////////////////////////////////////////////
@@ -34,6 +35,7 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
             self.products = objects as! [Product]
             self.tableView.reloadData()
         })
+        
     }
     
     
@@ -77,8 +79,8 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
     
     
     @IBAction func addProduct(sender: AnyObject) {
-        let produto = Product()
-        self.products.append(produto)
+        let product = Product()
+        self.products.append(product)
     }
     
     
@@ -87,7 +89,24 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
         })
     }
     
+    //////////////////////////////////////////////////////////////////////
+    // MARK: - ProductCellDelegate
     
+    func addProductToBuy(product: Product) {
+        let sale = Sale()
+        sale.product = product
+        sale.buyer = credential
+        sale.paid = false
+        self.sales.addObject(sale)
+    }
+    
+    func removeProductToBuy(product: Product) {
+        let sale = Sale()
+        sale.product = product
+        sale.buyer = credential
+        sale.paid = false
+        self.sales.removeObject(sale)
+    }
     
     //////////////////////////////////////////////////////////////////////
     // MARK: - Instance Methods

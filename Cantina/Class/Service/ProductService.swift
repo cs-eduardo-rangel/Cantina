@@ -6,6 +6,9 @@
 //  Copyright © 2016 Concrete Solutions. All rights reserved.
 //
 
+import Parse
+import Google
+
 class ProductService: NSObject {
     typealias completionBlockType = (NSArray, NSError!) ->Void
 

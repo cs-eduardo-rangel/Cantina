@@ -42,6 +42,8 @@
 		28CC91071C4B7464007B7B78 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CC91061C4B7464007B7B78 /* Util.swift */; };
 		28CC91081C4B7464007B7B78 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CC91061C4B7464007B7B78 /* Util.swift */; };
 		5043EA9E6CEC5A30DDE12927 /* libPods-CantinaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 009436B6B8342CCC918E9358 /* libPods-CantinaTests.a */; };
+		6FAB727D6299995A7A906086 /* Pods_Cantina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5653E9E0615FAC6197DD6BF2 /* Pods_Cantina.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		74DCF13F1C53D9BB000196EA /* CredentialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DCF13E1C53D9BB000196EA /* CredentialStore.swift */; settings = {ASSET_TAGS = (); }; };
 		A00B5B331B893B9500349717 /* PurchaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B5B321B893B9500349717 /* PurchaseCell.swift */; };
 		A00B5B381B893EA000349717 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B5B371B893EA000349717 /* Product.swift */; };
 		A03998471BDD4D8A00663F40 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03998461BDD4D8A00663F40 /* LoginViewController.swift */; };
@@ -80,7 +82,6 @@
 		A0CD77F41B887DF700ED3AC6 /* SF-UI-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0CD77DF1B887DF700ED3AC6 /* SF-UI-Text-Regular.otf */; };
 		A0CD77F51B887DF700ED3AC6 /* SF-UI-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0CD77E01B887DF700ED3AC6 /* SF-UI-Text-Semibold.otf */; };
 		A0CD77F61B887DF700ED3AC6 /* SF-UI-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0CD77E11B887DF700ED3AC6 /* SF-UI-Text-SemiboldItalic.otf */; };
-		ACBE6F03E45A0CDD5B4055E3 /* libPods-Cantina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF3ED976F756A77335BD2298 /* libPods-Cantina.a */; };
 		FDBA26A41C51566E009DF6D0 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBA26A31C51566E009DF6D0 /* Credentials.swift */; };
 		FDBA26A61C515B4A009DF6D0 /* Sale.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBA26A51C515B4A009DF6D0 /* Sale.swift */; };
 		FDBA26A91C516B93009DF6D0 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBA26A81C516B93009DF6D0 /* ProductService.swift */; };
@@ -122,6 +123,8 @@
 		28CC91001C4A1060007B7B78 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		28CC91061C4B7464007B7B78 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		49BC328952897D7EBC326305 /* Pods-CantinaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CantinaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CantinaTests/Pods-CantinaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5653E9E0615FAC6197DD6BF2 /* Pods_Cantina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cantina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74DCF13E1C53D9BB000196EA /* CredentialStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialStore.swift; sourceTree = "<group>"; };
 		A00B5B321B893B9500349717 /* PurchaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseCell.swift; sourceTree = "<group>"; };
 		A00B5B371B893EA000349717 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = Model/Product.swift; sourceTree = "<group>"; };
 		A03998461BDD4D8A00663F40 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -163,7 +166,6 @@
 		A0CD77DF1B887DF700ED3AC6 /* SF-UI-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Regular.otf"; path = "SF-UI/SF-UI-Text-Regular.otf"; sourceTree = "<group>"; };
 		A0CD77E01B887DF700ED3AC6 /* SF-UI-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Semibold.otf"; path = "SF-UI/SF-UI-Text-Semibold.otf"; sourceTree = "<group>"; };
 		A0CD77E11B887DF700ED3AC6 /* SF-UI-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-SemiboldItalic.otf"; path = "SF-UI/SF-UI-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
-		AF3ED976F756A77335BD2298 /* libPods-Cantina.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cantina.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B297D03611A8D7F220340E0E /* Pods-Cantina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cantina.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cantina/Pods-Cantina.debug.xcconfig"; sourceTree = "<group>"; };
 		B73BD2A4F18ADB1A49C8762F /* Pods-Cantina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cantina.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cantina/Pods-Cantina.release.xcconfig"; sourceTree = "<group>"; };
 		FD7C4D761C5026F10075F7F7 /* libParse.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libParse.a; path = "Pods/../build/Debug-iphoneos/libParse.a"; sourceTree = "<group>"; };
@@ -188,7 +190,7 @@
 				28CC90F31C4A1012007B7B78 /* CoreGraphics.framework in Frameworks */,
 				28CC90F11C4A100A007B7B78 /* CFNetwork.framework in Frameworks */,
 				28CC90EF1C4A1003007B7B78 /* AudioToolbox.framework in Frameworks */,
-				ACBE6F03E45A0CDD5B4055E3 /* libPods-Cantina.a in Frameworks */,
+				6FAB727D6299995A7A906086 /* Pods_Cantina.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +234,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		74DCF13D1C53D976000196EA /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				74DCF13E1C53D9BB000196EA /* CredentialStore.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		774720658CC342C97D46287E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,8 +257,8 @@
 				28CC90F41C4A102E007B7B78 /* CoreLocation.framework */,
 				28CC90F21C4A1012007B7B78 /* CoreGraphics.framework */,
 				28CC90F01C4A100A007B7B78 /* CFNetwork.framework */,
-				AF3ED976F756A77335BD2298 /* libPods-Cantina.a */,
 				009436B6B8342CCC918E9358 /* libPods-CantinaTests.a */,
+				5653E9E0615FAC6197DD6BF2 /* Pods_Cantina.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -262,6 +272,7 @@
 				A00B5B391B893EAC00349717 /* Model */,
 				A00B5B351B893BE200349717 /* ViewController */,
 				FDBA26A71C516B02009DF6D0 /* Service */,
+				74DCF13D1C53D976000196EA /* Util */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -413,8 +424,8 @@
 				A088E47B1B88446000A7AA30 /* Sources */,
 				A088E47C1B88446000A7AA30 /* Frameworks */,
 				A088E47D1B88446000A7AA30 /* Resources */,
-				EBB2B85D2583DFFCF14455F0 /* Embed Pods Frameworks */,
 				734668FDB837133E53FB1A4E /* Copy Pods Resources */,
+				5504200763EB689A14F6A0A2 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -569,6 +580,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5504200763EB689A14F6A0A2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cantina/Pods-Cantina-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6752C15D95099D6EC8F33AAF /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -629,21 +655,6 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		EBB2B85D2583DFFCF14455F0 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cantina/Pods-Cantina-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		EDBDA23A098AF1AF55DAD8DD /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -672,6 +683,7 @@
 				FDBA26A61C515B4A009DF6D0 /* Sale.swift in Sources */,
 				2896D4C81C4D971F009AE9BE /* JSSAlertView.swift in Sources */,
 				FDBA26A91C516B93009DF6D0 /* ProductService.swift in Sources */,
+				74DCF13F1C53D9BB000196EA /* CredentialStore.swift in Sources */,
 				A00B5B381B893EA000349717 /* Product.swift in Sources */,
 				28CC91071C4B7464007B7B78 /* Util.swift in Sources */,
 				A088E4851B88446000A7AA30 /* PurchasesViewController.swift in Sources */,

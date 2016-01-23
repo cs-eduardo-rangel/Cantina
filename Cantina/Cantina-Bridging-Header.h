@@ -9,7 +9,5 @@
 #ifndef Cantina_Bridge_Header_h
 #define Cantina_Bridge_Header_h
 
-#import <Google/SignIn.h>
-#import <Parse/Parse.h>
 
 #endif /* Cantina_Bridge_Header_h */

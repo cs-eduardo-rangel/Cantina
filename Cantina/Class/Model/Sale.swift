@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import Parse
+import Google
 
 class Sale: PFObject, PFSubclassing {
     

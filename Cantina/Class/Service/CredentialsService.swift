@@ -6,10 +6,25 @@
 //  Copyright © 2016 Concrete Solutions. All rights reserved.
 //
 
+import Google
+import Parse
+
 class CredentialsService: NSObject {
     typealias userExistsBlockType = (Bool,NSString) ->Void
-    typealias userCreatedBlockType = (Bool, Credentials) ->Void
+    typealias userBlockType = (Bool, Credentials?) ->Void
     
+    class func getUser(googlePlusId:String, completion:userBlockType){
+        let credentialsQuery = PFQuery(className: Credentials.parseClassName())
+        credentialsQuery.whereKey("googlePlusId", equalTo: googlePlusId)
+        credentialsQuery.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
+            if objects?.count > 0{
+                completion(true, (objects?.first as! Credentials))
+            }else{
+                completion(false, nil)
+            }
+        }
+
+    }
     
     class func logInUser(user:GIDGoogleUser, completion:userExistsBlockType) ->  Void{
         
@@ -19,31 +34,29 @@ class CredentialsService: NSObject {
             return
         }
         
-        let credentialsQuery = PFQuery(className: Credentials.parseClassName())
-        credentialsQuery.whereKey("googlePlusId", equalTo: user.userID)
-        credentialsQuery.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
-            if objects?.count > 0{
+        self.getUser(user.userID) { (success, credentials) -> Void in
+            if (credentials != nil) {
+                self.addCredentialsToInstalation(credentials!)
                 
-                self.addCredentialsToInstalation(objects?.first as! Credentials)
                 completion(true,"")
             }else{
+                
                 //creates new User
                 self.createUserCredentials(user, creationCompletion: { (success, userCredentials) -> Void in
                     if(success){
                         //STORE CREDENTIALS IN APP
-                        self.addCredentialsToInstalation(userCredentials)
+                        self.addCredentialsToInstalation(userCredentials!)
                         
                         completion(true,"")
                     }else{
                         completion(false, "Não foi possível criar usuário.\n Tente novamente")
                     }
                 })
-                
             }
         }
     }
     
-    class func createUserCredentials(googleUser:GIDGoogleUser,creationCompletion:userCreatedBlockType) -> Void{
+    class func createUserCredentials(googleUser:GIDGoogleUser,creationCompletion:userBlockType) -> Void{
         
         let newUser = Credentials.init()
         
@@ -61,5 +74,6 @@ class CredentialsService: NSObject {
     class func addCredentialsToInstalation(credentials:Credentials){
         PFInstallation.currentInstallation()["userCredentials"] = credentials
         PFInstallation.currentInstallation().saveInBackground()
+        CredentialStore().save(credentials.googlePlusId)
     }
 }

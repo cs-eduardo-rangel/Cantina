@@ -6,6 +6,7 @@
 //  Copyright © 2016 Concrete Solutions. All rights reserved.
 //
 
+import UIKit
 import Foundation
 
 class Util: NSObject {

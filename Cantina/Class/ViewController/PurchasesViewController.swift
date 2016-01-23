@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Google
 
 class PurchasesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
