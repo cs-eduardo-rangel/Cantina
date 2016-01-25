@@ -87,6 +87,7 @@
 		FDBA26A61C515B4A009DF6D0 /* Sale.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBA26A51C515B4A009DF6D0 /* Sale.swift */; };
 		FDBA26A91C516B93009DF6D0 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBA26A81C516B93009DF6D0 /* ProductService.swift */; };
 		FDBA26AB1C5264A4009DF6D0 /* CredentialsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBA26AA1C5264A4009DF6D0 /* CredentialsService.swift */; };
+		FDBA26AD1C56B9FB009DF6D0 /* Invoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBA26AC1C56B9FB009DF6D0 /* Invoice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,6 +176,7 @@
 		FDBA26A51C515B4A009DF6D0 /* Sale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sale.swift; path = Model/Sale.swift; sourceTree = "<group>"; };
 		FDBA26A81C516B93009DF6D0 /* ProductService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductService.swift; path = Service/ProductService.swift; sourceTree = "<group>"; };
 		FDBA26AA1C5264A4009DF6D0 /* CredentialsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CredentialsService.swift; path = Service/CredentialsService.swift; sourceTree = "<group>"; };
+		FDBA26AC1C56B9FB009DF6D0 /* Invoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Invoice.swift; path = Model/Invoice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				A00B5B371B893EA000349717 /* Product.swift */,
+				FDBA26AC1C56B9FB009DF6D0 /* Invoice.swift */,
 				FDBA26A31C51566E009DF6D0 /* Credentials.swift */,
 				FDBA26A51C515B4A009DF6D0 /* Sale.swift */,
 			);
@@ -685,6 +688,7 @@
 				74DCF1411C55A4D0000196EA /* SaleService.swift in Sources */,
 				FDBA26A41C51566E009DF6D0 /* Credentials.swift in Sources */,
 				FDBA26A61C515B4A009DF6D0 /* Sale.swift in Sources */,
+				FDBA26AD1C56B9FB009DF6D0 /* Invoice.swift in Sources */,
 				2896D4C81C4D971F009AE9BE /* JSSAlertView.swift in Sources */,
 				FDBA26A91C516B93009DF6D0 /* ProductService.swift in Sources */,
 				74DCF13F1C53D9BB000196EA /* CredentialStore.swift in Sources */,

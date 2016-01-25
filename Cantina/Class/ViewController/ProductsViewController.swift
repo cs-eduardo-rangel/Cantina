@@ -105,7 +105,6 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
         let sale = Sale()
         sale.product = product
         sale.buyer = credential!
-        sale.paid = false
         self.sales.addObject(sale)
     }
     
@@ -113,7 +112,6 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
         let sale = Sale()
         sale.product = product
         sale.buyer = credential!
-        sale.paid = false
         self.sales.removeObject(sale)
     }
     

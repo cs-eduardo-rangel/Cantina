@@ -8,11 +8,10 @@
 
 import Parse
 
-class Sale: PFObject, PFSubclassing {
-    @NSManaged var product: Product
-    @NSManaged var buyer: Credentials
-    @NSManaged var paid: Bool
+class SaleState: PFObject, PFSubclassing {
     
+    @NSManaged var order: NSNumber
+    @NSManaged var name: NSString
     
     override class func initialize() {
         struct Static {
@@ -24,6 +23,29 @@ class Sale: PFObject, PFSubclassing {
         }
     }
     
+    
+    class func parseClassName() -> String {
+        return "SaleState"
+    }
+
+}
+
+
+class Sale: PFObject, PFSubclassing {
+    @NSManaged var product: Product
+    @NSManaged var buyer: Credentials
+    @NSManaged var state: SaleState
+    
+    
+    override class func initialize() {
+        struct Static {
+            static var onceToken : dispatch_once_t = 0;
+        }
+        
+        dispatch_once(&Static.onceToken) {
+            self.registerSubclass()
+        }
+    }
     
     class func parseClassName() -> String {
         return "Sale"
