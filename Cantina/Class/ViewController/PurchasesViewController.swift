@@ -90,17 +90,16 @@ class PurchasesViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: PurchaseCell = tableView.dequeueReusableCellWithIdentifier("PurchaseCell", forIndexPath: indexPath) as! PurchaseCell
-        
-        let product = self.sales[indexPath.row].product
+        let sale = self.sales[indexPath.row]
         
         let formatter = NSNumberFormatter()
         formatter.numberStyle = .CurrencyStyle
         formatter.locale = NSLocale(localeIdentifier: "pt_BR")
         
-        cell.price?.text = formatter.stringFromNumber(product.price)
-        cell.name?.text = product.name
-        cell.purchaseTime?.text = Util.hourFrom(product.createdAt!)
-        cell.purchaseDate?.text = Util.dayFrom(product.createdAt!)
+        cell.price?.text = formatter.stringFromNumber(sale.product.price)
+        cell.name?.text = sale.product.name
+        cell.purchaseTime?.text = Util.hourFrom(sale.createdAt!)
+        cell.purchaseDate?.text = Util.dayFrom(sale.createdAt!)
         
         return cell
     }

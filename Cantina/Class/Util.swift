@@ -18,19 +18,13 @@ class Util: NSObject {
     
     
     static func hourFrom(date: NSDate) -> String {
-        print(date)
-        
         let calendar = NSCalendar(identifier: NSCalendarIdentifierGregorian)!
-        
-//        let timeZone = NSTimeZone(name: "America/Sao_Paulo")?.secondsFromGMTForDate(date)
-        
-//        var brazilianDate = date.dateByAddingTimeInterval(timeZone)
+        calendar.timeZone = NSTimeZone(name: "America/Sao_Paulo")!
         
         let components = calendar.components([.Hour, .Minute], fromDate: date)
         let hour = components.hour
         let minute = components.minute
         
-        print(String(format: "%d:%.2dh", hour, minute))
         return String(format: "%d:%.2dh", hour, minute)
     }
     
