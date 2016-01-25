@@ -64,4 +64,4 @@ SPEC CHECKSUMS:
   KeychainSwift: b3fcc33bd6e12778be79d9be27e0f2e369b8cc4e
   Parse: de2c52a9a1421b91ae7594ab8ce191afd184f19b
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0

@@ -42,9 +42,9 @@
 		28CC91071C4B7464007B7B78 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CC91061C4B7464007B7B78 /* Util.swift */; };
 		28CC91081C4B7464007B7B78 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CC91061C4B7464007B7B78 /* Util.swift */; };
 		5043EA9E6CEC5A30DDE12927 /* libPods-CantinaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 009436B6B8342CCC918E9358 /* libPods-CantinaTests.a */; };
-		6FAB727D6299995A7A906086 /* Pods_Cantina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5653E9E0615FAC6197DD6BF2 /* Pods_Cantina.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		74DCF13F1C53D9BB000196EA /* CredentialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DCF13E1C53D9BB000196EA /* CredentialStore.swift */; settings = {ASSET_TAGS = (); }; };
-		74DCF1411C55A4D0000196EA /* SaleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DCF1401C55A4CF000196EA /* SaleService.swift */; settings = {ASSET_TAGS = (); }; };
+		6FAB727D6299995A7A906086 /* Pods_Cantina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5653E9E0615FAC6197DD6BF2 /* Pods_Cantina.framework */; };
+		74DCF13F1C53D9BB000196EA /* CredentialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DCF13E1C53D9BB000196EA /* CredentialStore.swift */; };
+		74DCF1411C55A4D0000196EA /* SaleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DCF1401C55A4CF000196EA /* SaleService.swift */; };
 		A00B5B331B893B9500349717 /* PurchaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B5B321B893B9500349717 /* PurchaseCell.swift */; };
 		A00B5B381B893EA000349717 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B5B371B893EA000349717 /* Product.swift */; };
 		A03998471BDD4D8A00663F40 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03998461BDD4D8A00663F40 /* LoginViewController.swift */; };
