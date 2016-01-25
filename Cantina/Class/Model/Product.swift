@@ -26,11 +26,20 @@ class Product: PFObject, PFSubclassing {
         }
     }
     
-    
     class func parseClassName() -> String {
         return "Product"
     }
     
+    override func isEqual(object: AnyObject?) -> Bool {
+        if let object = object as? Product {
+            return objectId == object.objectId && name == object.name
+        } else {
+            return false
+        }
+    }
     
+    override var hash: Int {
+        return (objectId?.hashValue)! ^ name.hashValue
+    }
     
 }

@@ -51,6 +51,17 @@ class Sale: PFObject, PFSubclassing {
         return "Sale"
     }
     
+    override func isEqual(object: AnyObject?) -> Bool {
+        if let object = object as? Sale {
+            return product == object.product
+        } else {
+            return false
+        }
+    }
+    
+    override var hash: Int {
+        return product.hash
+    }
     
     
 }
