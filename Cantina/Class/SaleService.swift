@@ -21,7 +21,9 @@ class SaleService: NSObject {
         salesQuery.orderByAscending("createAt")
         salesQuery.includeKey("product")
         salesQuery.whereKey("buyer", equalTo: credentials)
-        salesQuery.whereKey("paid", equalTo: false)
+//        salesQuery.whereKey("state.order", equalTo: NSNumber(integer: 0))
+        
+        
         
         salesQuery.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
             if error == nil && objects?.count > 0{
