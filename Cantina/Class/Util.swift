@@ -17,5 +17,36 @@ class Util: NSObject {
     }
     
     
+    static func hourFrom(date: NSDate) -> String {
+        print(date)
+        
+        let calendar = NSCalendar(identifier: NSCalendarIdentifierGregorian)!
+        
+//        let timeZone = NSTimeZone(name: "America/Sao_Paulo")?.secondsFromGMTForDate(date)
+        
+//        var brazilianDate = date.dateByAddingTimeInterval(timeZone)
+        
+        let components = calendar.components([.Hour, .Minute], fromDate: date)
+        let hour = components.hour
+        let minute = components.minute
+        
+        print(String(format: "%d:%.2dh", hour, minute))
+        return String(format: "%d:%.2dh", hour, minute)
+    }
+    
+    
+    static func dayFrom(date: NSDate) -> String {
+        let calendar = NSCalendar(identifier: NSCalendarIdentifierGregorian)!
+        
+        let components = calendar.components([.Day, .Month], fromDate: date)
+        let day = components.day
+        
+        let months = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"]
+        let month = months[components.month - 1]
+        
+        return String(format: "%d %@", day, month)
+    }
+    
+    
     
 }

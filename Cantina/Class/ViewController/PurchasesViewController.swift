@@ -99,49 +99,10 @@ class PurchasesViewController: UIViewController, UITableViewDelegate, UITableVie
         
         cell.price?.text = formatter.stringFromNumber(product.price)
         cell.name?.text = product.name
-//        cell.purchaseTime?.text = product.purchaseTime
-//        cell.purchaseDate?.text = product.purchaseDate
+        cell.purchaseTime?.text = Util.hourFrom(product.createdAt!)
+        cell.purchaseDate?.text = Util.dayFrom(product.createdAt!)
         
         return cell
-    }
-    
-    
-    
-    //////////////////////////////////////////////////////////////////////
-    // MARK: - Instance Methods
-    
-    func createProduct() -> Product {
-        let product = Product()
-        
-        let productNames = ["Mate Leão", "Biscoito Goiabinha", "Fanta Laranja", "Coca-Cola", "Água", "Trakinas Morango", "Trakinas Chocolate", "Bolo de Cenoura"]
-        
-        product.name = productNames[Int(arc4random_uniform(UInt32(productNames.count)))]
-        product.price = 12.47
-        
-        let date = NSDate()
-        let calendar = NSCalendar.currentCalendar()
-        let components = calendar.components([.Hour, .Minute, .Day, .Month], fromDate: date)
-        let hour = components.hour
-        let minute = components.minute
-        let day = components.day
-        let month = components.month
-        
-//        product.purchaseTime = String(format: "%d:%.2dh", hour, minute)
-//        product.purchaseDate = String(format: "%d %@", day, self.monthStringWithMonth(month))
-        
-        
-        self.debit += product.price.doubleValue
-
-        
-        
-        return product
-    }
-    
-    
-    func monthStringWithMonth(month: Int) -> String {
-        let months = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"]
-        
-        return months[month - 1]
     }
     
     

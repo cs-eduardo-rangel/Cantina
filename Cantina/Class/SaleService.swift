@@ -12,31 +12,31 @@ class SaleService: NSObject {
     typealias completionGetBlockType = (NSArray, NSError!) ->Void
     typealias completionSaveBlockType = (Bool, NSError!) ->Void
     
-    class func getAllByCredential(credentials:Credentials, completion:completionGetBlockType) ->  Void{
+    
+    class func getAllByCredential(credentials:Credentials, completion:completionGetBlockType) -> Void {
         Product.registerSubclass()
+        
         let salesQuery = PFQuery(className: Sale.parseClassName())
         salesQuery.limit = 10000
         salesQuery.orderByAscending("createAt")
         salesQuery.includeKey("product")
         salesQuery.whereKey("buyer", equalTo: credentials)
+        salesQuery.whereKey("paid", equalTo: false)
+        
         salesQuery.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
-            
-            if error == nil && objects?.count>0{
+            if error == nil && objects?.count > 0{
                 completion(objects!,error)
             }
-            
         }
-        
     }
     
-    class func saveAll(sales:NSArray, completion:completionSaveBlockType) ->  Void{
-        
-        
+    
+    class func saveAll(sales:NSArray, completion:completionSaveBlockType) -> Void {
         [PFObject .saveAllInBackground(sales as? [PFObject], block: { (success, error) -> Void in
-            
             completion(success, error)
-            
         })]
-        
     }
+    
+    
+    
 }

@@ -239,6 +239,7 @@
 		74DCF13D1C53D976000196EA /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				28CC91061C4B7464007B7B78 /* Util.swift */,
 				74DCF13E1C53D9BB000196EA /* CredentialStore.swift */,
 			);
 			name = Util;
@@ -269,7 +270,6 @@
 			isa = PBXGroup;
 			children = (
 				A088E4821B88446000A7AA30 /* AppDelegate.swift */,
-				28CC91061C4B7464007B7B78 /* Util.swift */,
 				A00B5B361B893BE900349717 /* Cell */,
 				A00B5B391B893EAC00349717 /* Model */,
 				A00B5B351B893BE200349717 /* ViewController */,

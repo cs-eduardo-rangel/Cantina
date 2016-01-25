@@ -6,28 +6,31 @@
 //  Copyright © 2015 Concrete Solutions. All rights reserved.
 //
 
-import UIKit
 import Parse
 
 class Product: PFObject, PFSubclassing {
-    
     @NSManaged var name: String
     @NSManaged var barCode: String
     @NSManaged var price: NSNumber
     @NSManaged var amount: NSNumber
     @NSManaged var image: PFFile
     
+    
     override class func initialize() {
         struct Static {
             static var onceToken : dispatch_once_t = 0;
         }
+        
         dispatch_once(&Static.onceToken) {
             self.registerSubclass()
         }
     }
     
-    class func parseClassName() -> String{
+    
+    class func parseClassName() -> String {
         return "Product"
     }
-
+    
+    
+    
 }
