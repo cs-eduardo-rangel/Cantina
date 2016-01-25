@@ -22,7 +22,7 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
     
     var sales: NSMutableArray! = NSMutableArray()
     var products: [Product] = []
-    var credential: Credentials! = Credentials()
+    var credential: Credentials?
     
     
     //////////////////////////////////////////////////////////////////////
@@ -30,6 +30,10 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        CredentialsService.getUser(CredentialStore().get(), completion : { (success, object) -> Void in
+            self.credential = object
+        })
         
         ProductService.getAllProducts({ (objects, error) -> Void in
             self.products = objects as! [Product]
@@ -49,16 +53,21 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
     // MARK: - IBActions
     
     @IBAction func buyProducts(sender: AnyObject) {
-        let alertController = UIAlertController(title: "Confirma", message: "Compra no valor de R$10,00?", preferredStyle: .Alert)
+        
+        let totalPrice = self.sales.reduce(0) {$0 + CGFloat(($1 as! Sale).product.price)}
+        let alertController = UIAlertController(title: "Confirma", message: "Compra no valor de R$" +  String(format: "%.2f", totalPrice) + "?", preferredStyle: .Alert)
         
         let cancelAction = UIAlertAction(title: "Não", style: .Cancel) { (action) in
         
         }
         
         let OKAction = UIAlertAction(title: "Sim", style: .Default) { (action) in
-            self.dismissViewControllerAnimated(true, completion: { () -> Void in
-                print("Comprando #\(self.products)!", terminator: "")
+            SaleService.saveAll(self.sales, completion: { (success, error) -> Void in
+                self.dismissViewControllerAnimated(true, completion: { () -> Void in
+                    print("Comprando #\(self.sales)!", terminator: "")
+                })
             })
+            
         }
         
         alertController.addAction(OKAction)
@@ -95,7 +104,7 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
     func addProductToBuy(product: Product) {
         let sale = Sale()
         sale.product = product
-        sale.buyer = credential
+        sale.buyer = credential!
         sale.paid = false
         self.sales.addObject(sale)
     }
@@ -103,7 +112,7 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
     func removeProductToBuy(product: Product) {
         let sale = Sale()
         sale.product = product
-        sale.buyer = credential
+        sale.buyer = credential!
         sale.paid = false
         self.sales.removeObject(sale)
     }
@@ -132,15 +141,7 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: ProductCell = tableView.dequeueReusableCellWithIdentifier("ProductCell", forIndexPath: indexPath) as! ProductCell
         
-//        let product = self.products[indexPath.row]
-        
-        let formatter = NSNumberFormatter()
-        formatter.numberStyle = .CurrencyStyle
-        formatter.locale = NSLocale(localeIdentifier: "pt_BR")
-        
-        cell.productPriceLabel.text = formatter.stringFromNumber(self.products[indexPath.row].price)
-        cell.productNameLabel?.text = self.products[indexPath.row].name
-
+        cell.configureCell(self.products[indexPath.row], delegate: self)
         
         return cell
     }

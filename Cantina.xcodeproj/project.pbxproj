@@ -44,6 +44,7 @@
 		5043EA9E6CEC5A30DDE12927 /* libPods-CantinaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 009436B6B8342CCC918E9358 /* libPods-CantinaTests.a */; };
 		6FAB727D6299995A7A906086 /* Pods_Cantina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5653E9E0615FAC6197DD6BF2 /* Pods_Cantina.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		74DCF13F1C53D9BB000196EA /* CredentialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DCF13E1C53D9BB000196EA /* CredentialStore.swift */; settings = {ASSET_TAGS = (); }; };
+		74DCF1411C55A4D0000196EA /* SaleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DCF1401C55A4CF000196EA /* SaleService.swift */; settings = {ASSET_TAGS = (); }; };
 		A00B5B331B893B9500349717 /* PurchaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B5B321B893B9500349717 /* PurchaseCell.swift */; };
 		A00B5B381B893EA000349717 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B5B371B893EA000349717 /* Product.swift */; };
 		A03998471BDD4D8A00663F40 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03998461BDD4D8A00663F40 /* LoginViewController.swift */; };
@@ -125,6 +126,7 @@
 		49BC328952897D7EBC326305 /* Pods-CantinaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CantinaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CantinaTests/Pods-CantinaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5653E9E0615FAC6197DD6BF2 /* Pods_Cantina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cantina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DCF13E1C53D9BB000196EA /* CredentialStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialStore.swift; sourceTree = "<group>"; };
+		74DCF1401C55A4CF000196EA /* SaleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaleService.swift; sourceTree = "<group>"; };
 		A00B5B321B893B9500349717 /* PurchaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseCell.swift; sourceTree = "<group>"; };
 		A00B5B371B893EA000349717 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = Model/Product.swift; sourceTree = "<group>"; };
 		A03998461BDD4D8A00663F40 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -409,6 +411,7 @@
 			children = (
 				FDBA26A81C516B93009DF6D0 /* ProductService.swift */,
 				FDBA26AA1C5264A4009DF6D0 /* CredentialsService.swift */,
+				74DCF1401C55A4CF000196EA /* SaleService.swift */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -679,6 +682,7 @@
 			files = (
 				A03998471BDD4D8A00663F40 /* LoginViewController.swift in Sources */,
 				A00B5B331B893B9500349717 /* PurchaseCell.swift in Sources */,
+				74DCF1411C55A4D0000196EA /* SaleService.swift in Sources */,
 				FDBA26A41C51566E009DF6D0 /* Credentials.swift in Sources */,
 				FDBA26A61C515B4A009DF6D0 /* Sale.swift in Sources */,
 				2896D4C81C4D971F009AE9BE /* JSSAlertView.swift in Sources */,

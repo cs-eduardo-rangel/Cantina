@@ -13,7 +13,7 @@ class PurchasesViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var debitLabel: UILabel!
     
-    var products: [Product] = []
+    var sales: [Sale] = []
     var debit = 0.0
     
     //////////////////////////////////////////////////////////////////////
@@ -21,9 +21,28 @@ class PurchasesViewController: UIViewController, UITableViewDelegate, UITableVie
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        CredentialsService.getUser(CredentialStore().get(), completion : { (success, object) -> Void in
+            SaleService.getAllByCredential(object!, completion : { (objects, error) -> Void in
+                self.sales = objects as! [Sale]
+                
+                let formatter = NSNumberFormatter()
+                formatter.numberStyle = .CurrencyStyle
+                formatter.locale = NSLocale(localeIdentifier: "pt_BR")
+                
+                let totalDebit = self.sales.reduce(0) {$0 + CGFloat($1.product.price)}
+                
+                self.debitLabel.text = formatter.stringFromNumber(totalDebit)
+                
+                self.tableView.reloadData()
+            })
+        })
+        
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -61,7 +80,7 @@ class PurchasesViewController: UIViewController, UITableViewDelegate, UITableVie
     // MARK: - UITableViewDataSource
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.products.count
+        return self.sales.count
     }
     
     
@@ -72,7 +91,7 @@ class PurchasesViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: PurchaseCell = tableView.dequeueReusableCellWithIdentifier("PurchaseCell", forIndexPath: indexPath) as! PurchaseCell
         
-        let product = self.products[indexPath.row]
+        let product = self.sales[indexPath.row].product
         
         let formatter = NSNumberFormatter()
         formatter.numberStyle = .CurrencyStyle
@@ -110,13 +129,10 @@ class PurchasesViewController: UIViewController, UITableViewDelegate, UITableVie
 //        product.purchaseTime = String(format: "%d:%.2dh", hour, minute)
 //        product.purchaseDate = String(format: "%d %@", day, self.monthStringWithMonth(month))
         
-        let formatter = NSNumberFormatter()
-        formatter.numberStyle = .CurrencyStyle
-        formatter.locale = NSLocale(localeIdentifier: "pt_BR")
         
         self.debit += product.price.doubleValue
 
-        self.debitLabel.text = formatter.stringFromNumber(self.debit)
+        
         
         return product
     }

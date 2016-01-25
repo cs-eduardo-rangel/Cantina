@@ -14,19 +14,31 @@ protocol ProductCellDelegate {
 }
 
 class ProductCell: UITableViewCell {
-    @IBOutlet weak var productImage: UIImageView!
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var productPriceLabel: UILabel!
     @IBOutlet weak var productQuantityLabel: UILabel!
+    var product:Product!
     var delegate:ProductCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
-    
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+    }
+    
+    func configureCell(product:Product, delegate:ProductCellDelegate) {
+        
+        let formatter = NSNumberFormatter()
+        formatter.numberStyle = .CurrencyStyle
+        formatter.locale = NSLocale(localeIdentifier: "pt_BR")
+        
+        self.productPriceLabel.text = formatter.stringFromNumber(product.price)
+        self.productNameLabel?.text = product.name
+        
+        self.delegate = delegate
+        self.product = product
     }
     
     @IBAction func decreaseProduct(sender: AnyObject) {
@@ -37,6 +49,8 @@ class ProductCell: UITableViewCell {
         var productQuantity = Int(self.productQuantityLabel.text!)
         print("\(productQuantity!--)")
         self.productQuantityLabel.text = "\(productQuantity!--)"
+        
+        self.delegate?.removeProductToBuy(self.product)
     }
     
     @IBAction func increaseProduct(sender: AnyObject) {
@@ -47,6 +61,9 @@ class ProductCell: UITableViewCell {
         var productQuantity = Int(self.productQuantityLabel.text!)
         print("\(productQuantity!++)")
         self.productQuantityLabel.text = "\(productQuantity!++)"
+        
+        self.delegate?.addProductToBuy(self.product)
+        
     }
     
 }
