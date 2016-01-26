@@ -18,15 +18,12 @@ class SaleService: NSObject {
         
         let salesQuery = PFQuery(className: Sale.parseClassName())
         salesQuery.limit = 10000
-        salesQuery.orderByAscending("createAt")
+        salesQuery.orderByDescending("createAt")
         salesQuery.includeKey("product")
         salesQuery.whereKey("buyer", equalTo: credentials)
-//        salesQuery.whereKey("state.order", equalTo: NSNumber(integer: 0))
-        
-        
-        
+
         salesQuery.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
-            if error == nil && objects?.count > 0{
+            if error == nil && objects?.count > 0 {
                 completion(objects!,error)
             }
         }

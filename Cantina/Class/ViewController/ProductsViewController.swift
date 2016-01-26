@@ -25,6 +25,7 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
     var credential: Credentials?
     
     
+    
     //////////////////////////////////////////////////////////////////////
     // MARK: - View Lifecycle
     
@@ -53,8 +54,10 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
     // MARK: - IBActions
     
     @IBAction func buyProducts(sender: AnyObject) {
+        let totalPrice = self.sales.reduce(0) {
+            $0 + CGFloat(($1 as! Sale).product.price)
+        }
         
-        let totalPrice = self.sales.reduce(0) {$0 + CGFloat(($1 as! Sale).product.price)}
         let alertController = UIAlertController(title: "Confirma", message: "Compra no valor de R$" +  String(format: "%.2f", totalPrice) + "?", preferredStyle: .Alert)
         
         let cancelAction = UIAlertAction(title: "Não", style: .Cancel) { (action) in
@@ -67,7 +70,6 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
                     print("Comprando #\(self.sales)!", terminator: "")
                 })
             })
-            
         }
         
         alertController.addAction(OKAction)
@@ -76,20 +78,6 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
         self.presentViewController(alertController, animated: true) {
             
         }
-        
-//        let customIcon = UIImage(named: "Food3")
-//        let alertview = JSSAlertView().show(self, title: "Kitchen sink", text: "Here's a modal alert with descriptive text, an icon, custom fonts and a custom color", buttonText: "Sweet", color: UIColorFromHex(0xE0107A, alpha: 1), iconImage: customIcon)
-//        alertview.addAction(closeCallback)
-//        alertview.setTitleFont("ClearSans-Bold")
-//        alertview.setTextFont("ClearSans")
-//        alertview.setButtonFont("ClearSans-Light")
-//        alertview.setTextTheme(.Light)
-    }
-    
-    
-    @IBAction func addProduct(sender: AnyObject) {
-        let product = Product()
-        self.products.append(product)
     }
     
     
@@ -97,6 +85,8 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
         self.dismissViewControllerAnimated(true, completion: { () -> Void in
         })
     }
+    
+    
     
     //////////////////////////////////////////////////////////////////////
     // MARK: - ProductCellDelegate
@@ -108,18 +98,12 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
         self.sales.addObject(sale)
     }
     
+    
     func removeProductToBuy(product: Product) {
         let sale = Sale()
         sale.product = product
         sale.buyer = credential!
         self.sales.removeObject(sale)
-    }
-    
-    //////////////////////////////////////////////////////////////////////
-    // MARK: - Instance Methods
-    
-    func closeCallback() {
-        print("opa")
     }
     
     
@@ -145,12 +129,7 @@ class ProductsViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        print("You selected cell #\(indexPath.row)!", terminator: "")
-    }
     
-    
-
     //////////////////////////////////////////////////////////////////////
     // MARK: - Navigation
 
