@@ -98,8 +98,8 @@ class PurchasesViewController: UIViewController, UITableViewDelegate, UITableVie
         
         cell.price?.text = formatter.stringFromNumber(sale.product.price)
         cell.name?.text = sale.product.name
-        cell.purchaseTime?.text = Util.hourFrom(sale.createdAt!)
-        cell.purchaseDate?.text = Util.dayFrom(sale.createdAt!)
+        cell.purchaseTime?.text = NSDate.hourMinute(sale.createdAt!)
+        cell.purchaseDate?.text = NSDate.dayMonth(sale.createdAt!)
         
         return cell
     }
