@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		287FD5BE1C58114900E5CF4D /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287FD5BD1C58114900E5CF4D /* NSDateExtension.swift */; };
-		287FD5BF1C58114900E5CF4D /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287FD5BD1C58114900E5CF4D /* NSDateExtension.swift */; };
-		287FD5C01C58114900E5CF4D /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287FD5BD1C58114900E5CF4D /* NSDateExtension.swift */; };
+		287FD5BE1C58114900E5CF4D /* NSDateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287FD5BD1C58114900E5CF4D /* NSDateExtensions.swift */; };
+		287FD5BF1C58114900E5CF4D /* NSDateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287FD5BD1C58114900E5CF4D /* NSDateExtensions.swift */; };
+		287FD5C01C58114900E5CF4D /* NSDateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287FD5BD1C58114900E5CF4D /* NSDateExtensions.swift */; };
+		287FD5C21C58150D00E5CF4D /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287FD5C11C58150D00E5CF4D /* UIImageViewExtensions.swift */; };
+		287FD5C31C58150D00E5CF4D /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287FD5C11C58150D00E5CF4D /* UIImageViewExtensions.swift */; };
+		287FD5C41C58150D00E5CF4D /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287FD5C11C58150D00E5CF4D /* UIImageViewExtensions.swift */; };
 		2896D4BA1C4D862E009AE9BE /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0595AD61B8D6D7C00846350 /* ProductsViewController.swift */; };
 		2896D4BB1C4D8639009AE9BE /* PurchasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A088E4841B88446000A7AA30 /* PurchasesViewController.swift */; };
 		2896D4BC1C4D8641009AE9BE /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0595AD61B8D6D7C00846350 /* ProductsViewController.swift */; };
@@ -20,7 +23,6 @@
 		2896D4C11C4D8653009AE9BE /* PurchaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B5B321B893B9500349717 /* PurchaseCell.swift */; };
 		2896D4C21C4D8656009AE9BE /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0595AD81B8D737C00846350 /* ProductCell.swift */; };
 		2896D4C31C4D8657009AE9BE /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0595AD81B8D737C00846350 /* ProductCell.swift */; };
-		2896D4C41C4D865C009AE9BE /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CC91061C4B7464007B7B78 /* Util.swift */; };
 		2896D4C51C4D865F009AE9BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A088E4821B88446000A7AA30 /* AppDelegate.swift */; };
 		2896D4C61C4D8660009AE9BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A088E4821B88446000A7AA30 /* AppDelegate.swift */; };
 		2896D4C81C4D971F009AE9BE /* JSSAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2896D4C71C4D971F009AE9BE /* JSSAlertView.swift */; };
@@ -42,8 +44,6 @@
 		28CC90FD1C4A104F007B7B78 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CC90FC1C4A104F007B7B78 /* SystemConfiguration.framework */; };
 		28CC90FF1C4A1058007B7B78 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CC90FE1C4A1058007B7B78 /* libz.tbd */; };
 		28CC91011C4A1060007B7B78 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CC91001C4A1060007B7B78 /* libsqlite3.tbd */; };
-		28CC91071C4B7464007B7B78 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CC91061C4B7464007B7B78 /* Util.swift */; };
-		28CC91081C4B7464007B7B78 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CC91061C4B7464007B7B78 /* Util.swift */; };
 		5043EA9E6CEC5A30DDE12927 /* libPods-CantinaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 009436B6B8342CCC918E9358 /* libPods-CantinaTests.a */; };
 		6FAB727D6299995A7A906086 /* Pods_Cantina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5653E9E0615FAC6197DD6BF2 /* Pods_Cantina.framework */; };
 		74DCF13F1C53D9BB000196EA /* CredentialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DCF13E1C53D9BB000196EA /* CredentialStore.swift */; };
@@ -113,7 +113,8 @@
 /* Begin PBXFileReference section */
 		009436B6B8342CCC918E9358 /* libPods-CantinaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CantinaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B0BC6E91ACD85FC67F4DB38 /* Pods-CantinaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CantinaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CantinaTests/Pods-CantinaTests.release.xcconfig"; sourceTree = "<group>"; };
-		287FD5BD1C58114900E5CF4D /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
+		287FD5BD1C58114900E5CF4D /* NSDateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtensions.swift; sourceTree = "<group>"; };
+		287FD5C11C58150D00E5CF4D /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
 		2896D4C71C4D971F009AE9BE /* JSSAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSSAlertView.swift; sourceTree = "<group>"; };
 		289AB6C21C4F3A64003AF01F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Purchases.storyboard; sourceTree = "<group>"; };
 		289AB6C61C4F3A81003AF01F /* Products.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Products.storyboard; sourceTree = "<group>"; };
@@ -127,7 +128,6 @@
 		28CC90FC1C4A104F007B7B78 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		28CC90FE1C4A1058007B7B78 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		28CC91001C4A1060007B7B78 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		28CC91061C4B7464007B7B78 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		49BC328952897D7EBC326305 /* Pods-CantinaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CantinaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CantinaTests/Pods-CantinaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5653E9E0615FAC6197DD6BF2 /* Pods_Cantina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cantina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DCF13E1C53D9BB000196EA /* CredentialStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialStore.swift; sourceTree = "<group>"; };
@@ -223,7 +223,8 @@
 		287FD5BC1C58110100E5CF4D /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				287FD5BD1C58114900E5CF4D /* NSDateExtension.swift */,
+				287FD5BD1C58114900E5CF4D /* NSDateExtensions.swift */,
+				287FD5C11C58150D00E5CF4D /* UIImageViewExtensions.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -255,7 +256,6 @@
 			children = (
 				287FD5BC1C58110100E5CF4D /* Extension */,
 				74DCF13E1C53D9BB000196EA /* CredentialStore.swift */,
-				28CC91061C4B7464007B7B78 /* Util.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -706,10 +706,10 @@
 				FDBA26A91C516B93009DF6D0 /* ProductService.swift in Sources */,
 				74DCF13F1C53D9BB000196EA /* CredentialStore.swift in Sources */,
 				A00B5B381B893EA000349717 /* Product.swift in Sources */,
-				28CC91071C4B7464007B7B78 /* Util.swift in Sources */,
-				287FD5BE1C58114900E5CF4D /* NSDateExtension.swift in Sources */,
+				287FD5BE1C58114900E5CF4D /* NSDateExtensions.swift in Sources */,
 				A088E4851B88446000A7AA30 /* PurchasesViewController.swift in Sources */,
 				A088E4831B88446000A7AA30 /* AppDelegate.swift in Sources */,
+				287FD5C21C58150D00E5CF4D /* UIImageViewExtensions.swift in Sources */,
 				A0595AD91B8D737C00846350 /* ProductCell.swift in Sources */,
 				A0595AD71B8D6D7C00846350 /* ProductsViewController.swift in Sources */,
 				FDBA26AB1C5264A4009DF6D0 /* CredentialsService.swift in Sources */,
@@ -722,13 +722,13 @@
 			files = (
 				2896D4C01C4D8652009AE9BE /* PurchaseCell.swift in Sources */,
 				A03998481BDD4D8A00663F40 /* LoginViewController.swift in Sources */,
-				28CC91081C4B7464007B7B78 /* Util.swift in Sources */,
+				287FD5C31C58150D00E5CF4D /* UIImageViewExtensions.swift in Sources */,
 				2896D4BB1C4D8639009AE9BE /* PurchasesViewController.swift in Sources */,
 				A088E4981B88446000A7AA30 /* CantinaTests.swift in Sources */,
 				2896D4C91C4D971F009AE9BE /* JSSAlertView.swift in Sources */,
 				2896D4C21C4D8656009AE9BE /* ProductCell.swift in Sources */,
 				2896D4BA1C4D862E009AE9BE /* ProductsViewController.swift in Sources */,
-				287FD5BF1C58114900E5CF4D /* NSDateExtension.swift in Sources */,
+				287FD5BF1C58114900E5CF4D /* NSDateExtensions.swift in Sources */,
 				2896D4C51C4D865F009AE9BE /* AppDelegate.swift in Sources */,
 				2896D4BE1C4D864D009AE9BE /* Product.swift in Sources */,
 			);
@@ -740,13 +740,13 @@
 			files = (
 				2896D4BC1C4D8641009AE9BE /* ProductsViewController.swift in Sources */,
 				2896D4BD1C4D8646009AE9BE /* PurchasesViewController.swift in Sources */,
+				287FD5C41C58150D00E5CF4D /* UIImageViewExtensions.swift in Sources */,
 				2896D4CA1C4D971F009AE9BE /* JSSAlertView.swift in Sources */,
 				2896D4C11C4D8653009AE9BE /* PurchaseCell.swift in Sources */,
 				2896D4C61C4D8660009AE9BE /* AppDelegate.swift in Sources */,
-				2896D4C41C4D865C009AE9BE /* Util.swift in Sources */,
 				2896D4BF1C4D864E009AE9BE /* Product.swift in Sources */,
 				A03998491BDD4D8A00663F40 /* LoginViewController.swift in Sources */,
-				287FD5C01C58114900E5CF4D /* NSDateExtension.swift in Sources */,
+				287FD5C01C58114900E5CF4D /* NSDateExtensions.swift in Sources */,
 				2896D4C31C4D8657009AE9BE /* ProductCell.swift in Sources */,
 				A088E4A31B88446000A7AA30 /* CantinaUITests.swift in Sources */,
 			);
