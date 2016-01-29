@@ -18,7 +18,7 @@ class SaleService: NSObject {
         
         let salesQuery = PFQuery(className: Sale.parseClassName())
         salesQuery.limit = 10000
-        salesQuery.orderByDescending("createAt")
+        salesQuery.orderByDescending("createdAt")
         salesQuery.includeKey("product")
         salesQuery.whereKey("buyer", equalTo: credentials)
 

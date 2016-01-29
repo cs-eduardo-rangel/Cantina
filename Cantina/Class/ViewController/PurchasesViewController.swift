@@ -101,10 +101,6 @@ class PurchasesViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.purchaseTime?.text = NSDate.hourMinute(sale.createdAt!)
         cell.purchaseDate?.text = NSDate.dayMonth(sale.createdAt!)
         
-        self.sales.sortInPlace {
-            $0.createdAt!.compare($1.createdAt!) == NSComparisonResult.OrderedDescending
-        }
-        
         return cell
     }
     
