@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="SF-UI-Display-Bold.otf">
@@ -13,11 +13,14 @@
         <mutableArray key="SF-UI-Text-Light.otf">
             <string>SFUIText-Light</string>
             <string>SFUIText-Light</string>
+            <string>SFUIText-Light</string>
         </mutableArray>
         <mutableArray key="SF-UI-Text-Medium.otf">
             <string>SFUIText-Medium</string>
+            <string>SFUIText-Medium</string>
         </mutableArray>
         <mutableArray key="SF-UI-Text-Semibold.otf">
+            <string>SFUIText-Semibold</string>
             <string>SFUIText-Semibold</string>
         </mutableArray>
     </customFonts>
@@ -49,6 +52,36 @@
                                     <segue destination="h8y-kt-wKQ" kind="presentation" id="8rk-Br-ZGD"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZM-Vn-mTj">
+                                <rect key="frame" x="546" y="28" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="6sH-Ce-9gu"/>
+                                    <constraint firstAttribute="width" constant="44" id="eRO-Tg-umJ"/>
+                                </constraints>
+                                <state key="normal" image="ic_power">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tyx-v5-4Px"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="rU3-Fd-PsW">
+                                <rect key="frame" x="46" y="75" width="272" height="73"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VALOR A PAGAR" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7k-Tq-a32">
+                                        <rect key="frame" x="0.0" y="0.0" width="84" height="15"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="12"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$0.000,00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s47-4C-2bg">
+                                        <rect key="frame" x="0.0" y="15" width="272" height="58"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Bold" family="SF UI Display" pointSize="48"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ujD-jZ-5tz">
                                 <rect key="frame" x="0.0" y="235" width="600" height="365"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -63,28 +96,22 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-item-empty" translatesAutoresizingMaskIntoConstraints="NO" id="Ceu-a9-qnp">
                                                     <rect key="frame" x="61" y="0.0" width="14" height="46"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 200,60" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4b7-Zf-imG">
-                                                    <rect key="frame" x="523" y="15" width="62" height="15"/>
-                                                    <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="12"/>
-                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99 JUL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgI-cE-4ds">
                                                     <rect key="frame" x="8" y="14" width="42" height="15"/>
                                                     <fontDescription key="fontDescription" name="SFUIText-Medium" family="SF UI Text" pointSize="12"/>
                                                     <color key="textColor" red="0.47843137250000001" green="0.40784313729999999" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="LWW-id-omO">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="LWW-id-omO">
                                                     <rect key="frame" x="96" y="8" width="59" height="27"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" text="16:20h" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GiA-3z-oss">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="16:20h" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GiA-3z-oss">
                                                             <rect key="frame" x="0.0" y="0.0" width="32" height="12"/>
                                                             <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="10"/>
                                                             <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mate Leão" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Td1-ro-DsP">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mate Leão" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Td1-ro-DsP">
                                                             <rect key="frame" x="0.0" y="12" width="59" height="15"/>
                                                             <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="12"/>
                                                             <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -92,18 +119,24 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 200,60" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4b7-Zf-imG">
+                                                    <rect key="frame" x="523" y="20" width="62" height="15"/>
+                                                    <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="12"/>
+                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="4b7-Zf-imG" secondAttribute="trailing" constant="15" id="0xG-6R-zNK"/>
                                                 <constraint firstAttribute="bottom" secondItem="LWW-id-omO" secondAttribute="bottom" constant="9" id="8tn-xe-Esb"/>
-                                                <constraint firstItem="4b7-Zf-imG" firstAttribute="top" secondItem="SMK-xR-KAi" secondAttribute="top" constant="15" id="AZw-FN-cVj"/>
+                                                <constraint firstItem="4b7-Zf-imG" firstAttribute="top" secondItem="SMK-xR-KAi" secondAttribute="top" constant="20" id="AZw-FN-cVj"/>
                                                 <constraint firstItem="LWW-id-omO" firstAttribute="top" secondItem="SMK-xR-KAi" secondAttribute="top" constant="8" id="K0M-hX-fqB"/>
                                                 <constraint firstItem="LgI-cE-4ds" firstAttribute="top" secondItem="SMK-xR-KAi" secondAttribute="top" constant="14" id="Kja-KA-Os0"/>
                                                 <constraint firstAttribute="bottom" secondItem="LgI-cE-4ds" secondAttribute="bottom" constant="15" id="NBC-9E-oLU"/>
                                                 <constraint firstItem="Ceu-a9-qnp" firstAttribute="top" secondItem="SMK-xR-KAi" secondAttribute="top" id="OxK-nI-utE"/>
                                                 <constraint firstItem="Ceu-a9-qnp" firstAttribute="leading" secondItem="SMK-xR-KAi" secondAttribute="leading" constant="61" id="TgQ-Kh-9eq"/>
                                                 <constraint firstAttribute="bottom" secondItem="Ceu-a9-qnp" secondAttribute="bottom" constant="-2" id="UNe-io-1XQ"/>
-                                                <constraint firstAttribute="bottom" secondItem="4b7-Zf-imG" secondAttribute="bottom" constant="14" id="UmI-Xr-Ipx"/>
+                                                <constraint firstAttribute="bottom" secondItem="4b7-Zf-imG" secondAttribute="bottom" constant="9" id="UmI-Xr-Ipx"/>
                                                 <constraint firstItem="LgI-cE-4ds" firstAttribute="leading" secondItem="SMK-xR-KAi" secondAttribute="leading" constant="8" id="f5k-PH-V6d"/>
                                                 <constraint firstItem="LWW-id-omO" firstAttribute="leading" secondItem="Ceu-a9-qnp" secondAttribute="trailing" constant="21" id="wGK-AU-vL3"/>
                                             </constraints>
@@ -116,42 +149,62 @@
                                             <outlet property="purchaseTime" destination="GiA-3z-oss" id="a0d-rx-KSM"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" reuseIdentifier="InvoiceCell" rowHeight="44" id="37Q-oc-dbs" customClass="InvoiceCell" customModule="Cantina" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="37Q-oc-dbs" id="NKO-tW-o7W">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-item-empty" translatesAutoresizingMaskIntoConstraints="NO" id="g4V-G9-cA8">
+                                                    <rect key="frame" x="61" y="0.0" width="14" height="46"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99 JUL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2d-EZ-J1m">
+                                                    <rect key="frame" x="8" y="14" width="42" height="15"/>
+                                                    <fontDescription key="fontDescription" name="SFUIText-Medium" family="SF UI Text" pointSize="12"/>
+                                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VALOR A PAGAR" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udV-QT-Whj">
+                                                    <rect key="frame" x="96" y="15" width="92" height="15"/>
+                                                    <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="12"/>
+                                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 200,60" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2E-y9-ilC">
+                                                    <rect key="frame" x="523" y="15" width="62" height="15"/>
+                                                    <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="12"/>
+                                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="p2d-EZ-J1m" firstAttribute="leading" secondItem="NKO-tW-o7W" secondAttribute="leading" constant="8" id="DDF-1B-rBq"/>
+                                                <constraint firstItem="udV-QT-Whj" firstAttribute="top" secondItem="NKO-tW-o7W" secondAttribute="top" constant="15" id="GtR-mn-NfY"/>
+                                                <constraint firstItem="p2d-EZ-J1m" firstAttribute="top" secondItem="NKO-tW-o7W" secondAttribute="top" constant="14" id="MhO-F9-xZm"/>
+                                                <constraint firstItem="udV-QT-Whj" firstAttribute="leading" secondItem="g4V-G9-cA8" secondAttribute="trailing" constant="21" id="RUS-or-cmJ"/>
+                                                <constraint firstItem="g4V-G9-cA8" firstAttribute="leading" secondItem="NKO-tW-o7W" secondAttribute="leading" constant="61" id="X5Q-jC-qY1"/>
+                                                <constraint firstAttribute="bottom" secondItem="g4V-G9-cA8" secondAttribute="bottom" constant="-2" id="dOT-ZE-ygR"/>
+                                                <constraint firstItem="a2E-y9-ilC" firstAttribute="top" secondItem="NKO-tW-o7W" secondAttribute="top" constant="15" id="g67-ex-Zfl"/>
+                                                <constraint firstItem="g4V-G9-cA8" firstAttribute="top" secondItem="NKO-tW-o7W" secondAttribute="top" id="iMQ-mg-LSp"/>
+                                                <constraint firstAttribute="trailing" secondItem="a2E-y9-ilC" secondAttribute="trailing" constant="15" id="lcj-th-C9x"/>
+                                                <constraint firstAttribute="bottom" secondItem="udV-QT-Whj" secondAttribute="bottom" constant="14" id="n8p-EN-SHa"/>
+                                                <constraint firstAttribute="bottom" secondItem="p2d-EZ-J1m" secondAttribute="bottom" constant="15" id="sN9-lU-PkP"/>
+                                                <constraint firstAttribute="bottom" secondItem="a2E-y9-ilC" secondAttribute="bottom" constant="14" id="yft-m0-6F6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.053367456896551722" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier=""/>
+                                        <connections>
+                                            <outlet property="invoiceTotal" destination="a2E-y9-ilC" id="eRu-tQ-WYa"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="HWY-ka-H1G"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="DdQ-rP-coV"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZM-Vn-mTj">
-                                <rect key="frame" x="546" y="28" width="44" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="6sH-Ce-9gu"/>
-                                    <constraint firstAttribute="width" constant="44" id="eRO-Tg-umJ"/>
-                                </constraints>
-                                <state key="normal" image="ic_power">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="logout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tyx-v5-4Px"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="rU3-Fd-PsW">
-                                <rect key="frame" x="46" y="75" width="272" height="73"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="VALOR A PAGAR" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7k-Tq-a32">
-                                        <rect key="frame" x="0.0" y="0.0" width="84" height="15"/>
-                                        <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="12"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="R$0.000,00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s47-4C-2bg">
-                                        <rect key="frame" x="0.0" y="15" width="272" height="58"/>
-                                        <fontDescription key="fontDescription" name="SFUIDisplay-Bold" family="SF UI Display" pointSize="48"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.48662967236360194" green="0.39099589480910291" blue="0.76995901106654785" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>

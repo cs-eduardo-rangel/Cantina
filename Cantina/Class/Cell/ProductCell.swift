@@ -29,7 +29,6 @@ class ProductCell: UITableViewCell {
     }
     
     func configureCell(product:Product, delegate:ProductCellDelegate) {
-        
         let formatter = NSNumberFormatter()
         formatter.numberStyle = .CurrencyStyle
         formatter.locale = NSLocale(localeIdentifier: "pt_BR")

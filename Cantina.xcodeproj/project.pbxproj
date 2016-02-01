@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		281DECBC1C5C350200AE3B6F /* InvoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281DECBB1C5C350200AE3B6F /* InvoiceCell.swift */; };
+		281DECBD1C5C350200AE3B6F /* InvoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281DECBB1C5C350200AE3B6F /* InvoiceCell.swift */; };
+		281DECBE1C5C350200AE3B6F /* InvoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281DECBB1C5C350200AE3B6F /* InvoiceCell.swift */; };
 		287FD5BE1C58114900E5CF4D /* NSDateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287FD5BD1C58114900E5CF4D /* NSDateExtensions.swift */; };
 		287FD5BF1C58114900E5CF4D /* NSDateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287FD5BD1C58114900E5CF4D /* NSDateExtensions.swift */; };
 		287FD5C01C58114900E5CF4D /* NSDateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287FD5BD1C58114900E5CF4D /* NSDateExtensions.swift */; };
@@ -113,6 +116,7 @@
 /* Begin PBXFileReference section */
 		009436B6B8342CCC918E9358 /* libPods-CantinaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CantinaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B0BC6E91ACD85FC67F4DB38 /* Pods-CantinaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CantinaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CantinaTests/Pods-CantinaTests.release.xcconfig"; sourceTree = "<group>"; };
+		281DECBB1C5C350200AE3B6F /* InvoiceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceCell.swift; sourceTree = "<group>"; };
 		287FD5BD1C58114900E5CF4D /* NSDateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtensions.swift; sourceTree = "<group>"; };
 		287FD5C11C58150D00E5CF4D /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
 		2896D4C71C4D971F009AE9BE /* JSSAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSSAlertView.swift; sourceTree = "<group>"; };
@@ -307,8 +311,9 @@
 		A00B5B361B893BE900349717 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				A00B5B321B893B9500349717 /* PurchaseCell.swift */,
+				281DECBB1C5C350200AE3B6F /* InvoiceCell.swift */,
 				A0595AD81B8D737C00846350 /* ProductCell.swift */,
+				A00B5B321B893B9500349717 /* PurchaseCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -703,6 +708,7 @@
 				FDBA26A61C515B4A009DF6D0 /* Sale.swift in Sources */,
 				FDBA26AD1C56B9FB009DF6D0 /* Invoice.swift in Sources */,
 				2896D4C81C4D971F009AE9BE /* JSSAlertView.swift in Sources */,
+				281DECBC1C5C350200AE3B6F /* InvoiceCell.swift in Sources */,
 				FDBA26A91C516B93009DF6D0 /* ProductService.swift in Sources */,
 				74DCF13F1C53D9BB000196EA /* CredentialStore.swift in Sources */,
 				A00B5B381B893EA000349717 /* Product.swift in Sources */,
@@ -721,6 +727,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2896D4C01C4D8652009AE9BE /* PurchaseCell.swift in Sources */,
+				281DECBD1C5C350200AE3B6F /* InvoiceCell.swift in Sources */,
 				A03998481BDD4D8A00663F40 /* LoginViewController.swift in Sources */,
 				287FD5C31C58150D00E5CF4D /* UIImageViewExtensions.swift in Sources */,
 				2896D4BB1C4D8639009AE9BE /* PurchasesViewController.swift in Sources */,
@@ -739,6 +746,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2896D4BC1C4D8641009AE9BE /* ProductsViewController.swift in Sources */,
+				281DECBE1C5C350200AE3B6F /* InvoiceCell.swift in Sources */,
 				2896D4BD1C4D8646009AE9BE /* PurchasesViewController.swift in Sources */,
 				287FD5C41C58150D00E5CF4D /* UIImageViewExtensions.swift in Sources */,
 				2896D4CA1C4D971F009AE9BE /* JSSAlertView.swift in Sources */,

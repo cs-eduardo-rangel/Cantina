@@ -89,19 +89,29 @@ class PurchasesViewController: UIViewController, UITableViewDelegate, UITableVie
     // MARK: - UITableViewDelegate
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: PurchaseCell = tableView.dequeueReusableCellWithIdentifier("PurchaseCell", forIndexPath: indexPath) as! PurchaseCell
         let sale = self.sales[indexPath.row]
         
         let formatter = NSNumberFormatter()
         formatter.numberStyle = .CurrencyStyle
         formatter.locale = NSLocale(localeIdentifier: "pt_BR")
+
+        if indexPath.row == self.sales.count - 1 {
+            let invoiceCell: InvoiceCell = tableView.dequeueReusableCellWithIdentifier("InvoiceCell", forIndexPath: indexPath) as! InvoiceCell
+
+            invoiceCell.invoiceTotal?.text = self.debitLabel.text
+//            invoiceCell.name?.text = sale.product.name
+            
+            return invoiceCell
+        }
+    
+        let purchaseCell: PurchaseCell = tableView.dequeueReusableCellWithIdentifier("PurchaseCell", forIndexPath: indexPath) as! PurchaseCell
         
-        cell.price?.text = formatter.stringFromNumber(sale.product.price)
-        cell.name?.text = sale.product.name
-        cell.purchaseTime?.text = NSDate.hourMinute(sale.createdAt!)
-        cell.purchaseDate?.text = NSDate.dayMonth(sale.createdAt!)
+        purchaseCell.price?.text = formatter.stringFromNumber(sale.product.price)
+        purchaseCell.name?.text = sale.product.name
+        purchaseCell.purchaseTime?.text = NSDate.hourMinute(sale.createdAt!)
+        purchaseCell.purchaseDate?.text = NSDate.dayMonth(sale.createdAt!)
         
-        return cell
+        return purchaseCell
     }
     
     
