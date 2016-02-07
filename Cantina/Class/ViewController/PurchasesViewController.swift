@@ -10,11 +10,16 @@ import UIKit
 import Google
 
 class PurchasesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    //////////////////////////////////////////////////////////////////////
+    // MARK: - Variables
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var debitLabel: UILabel!
     
     var sales: [Sale] = []
     var debit = 0.0
+    
+    
     
     //////////////////////////////////////////////////////////////////////
     // MARK: - Lifecycle
@@ -22,6 +27,7 @@ class PurchasesViewController: UIViewController, UITableViewDelegate, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -41,8 +47,8 @@ class PurchasesViewController: UIViewController, UITableViewDelegate, UITableVie
                 self.tableView.reloadData()
             })
         })
-        
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -54,7 +60,7 @@ class PurchasesViewController: UIViewController, UITableViewDelegate, UITableVie
     // MARK: - IBActions
     
     @IBAction func logout(sender: AnyObject) {
-        let alertController = UIAlertController(title: "Logout", message: "Quer mesmo sair?", preferredStyle: .Alert)
+        let alertController = UIAlertController(title: "Logout", message: "Já vai?", preferredStyle: .Alert)
         
         let cancelAction = UIAlertAction(title: "Não", style: .Cancel) { (action) in
             
@@ -99,7 +105,7 @@ class PurchasesViewController: UIViewController, UITableViewDelegate, UITableVie
             let invoiceCell: InvoiceCell = tableView.dequeueReusableCellWithIdentifier("InvoiceCell", forIndexPath: indexPath) as! InvoiceCell
 
             invoiceCell.invoiceTotal?.text = self.debitLabel.text
-//            invoiceCell.name?.text = sale.product.name
+//            invoiceCell.invoiceCloseDate?.text = 
             
             return invoiceCell
         }

@@ -32,7 +32,7 @@ class CredentialsService: NSObject {
     class func logInUser(user:GIDGoogleUser, completion:userExistsBlockType) -> Void {
         //Check User email with ConcreteSolutions
         if !user.profile.email.lowercaseString.containsString("concretesolutions.com.br") {
-            completion(false, "O Email precisa pertencer à Concrete Solutions.")
+            completion(false, "Hmmm. Então você não é da Concrete...")
             return
         }
         
@@ -78,7 +78,4 @@ class CredentialsService: NSObject {
         PFInstallation.currentInstallation().saveInBackground()
         CredentialStore().save(credentials.googlePlusId)
     }
-    
-    
-    
 }

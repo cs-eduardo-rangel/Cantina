@@ -15,6 +15,7 @@ class Credentials: PFObject, PFSubclassing {
     @NSManaged var image: String
     
     
+    
     override class func initialize() {
         struct Static {
             static var onceToken : dispatch_once_t = 0;
@@ -29,7 +30,4 @@ class Credentials: PFObject, PFSubclassing {
     class func parseClassName() -> String {
         return "Credentials"
     }
-    
-    
-    
 }

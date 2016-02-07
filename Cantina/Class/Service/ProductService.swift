@@ -11,7 +11,8 @@ import Google
 
 class ProductService: NSObject {
     typealias completionBlockType = (NSArray, NSError!) ->Void
-
+    
+    
     
     class func getAllProducts(completion:completionBlockType) ->  Void{
         let productsQuery = PFQuery(className: Product.parseClassName())
@@ -24,7 +25,4 @@ class ProductService: NSObject {
             }
         }
     }
-
-
-
 }

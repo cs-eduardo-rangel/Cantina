@@ -9,9 +9,10 @@
 import Parse
 
 class SaleState: PFObject, PFSubclassing {
-    
     @NSManaged var order: NSNumber
     @NSManaged var name: NSString
+    
+    
     
     override class func initialize() {
         struct Static {
@@ -27,14 +28,15 @@ class SaleState: PFObject, PFSubclassing {
     class func parseClassName() -> String {
         return "SaleState"
     }
-
 }
+
 
 
 class Sale: PFObject, PFSubclassing {
     @NSManaged var product: Product
     @NSManaged var buyer: Credentials
     @NSManaged var state: SaleState
+    
     
     
     override class func initialize() {
@@ -47,21 +49,23 @@ class Sale: PFObject, PFSubclassing {
         }
     }
     
+    
     class func parseClassName() -> String {
         return "Sale"
     }
     
+    
     override func isEqual(object: AnyObject?) -> Bool {
         if let object = object as? Sale {
             return product == object.product
-        } else {
+        }
+        else {
             return false
         }
     }
     
+    
     override var hash: Int {
         return product.hash
     }
-    
-    
 }

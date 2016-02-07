@@ -12,7 +12,9 @@ class Invoice: PFObject, PFSubclassing {
     @NSManaged var paid: Bool
     @NSManaged var buyer: Credentials
     @NSManaged var sales: [Sale]
-
+    
+    
+    
     override class func initialize() {
         struct Static {
             static var onceToken : dispatch_once_t = 0;
@@ -23,8 +25,8 @@ class Invoice: PFObject, PFSubclassing {
         }
     }
     
+    
     class func parseClassName() -> String {
         return "Invoice"
     }
 }
-

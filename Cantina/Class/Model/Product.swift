@@ -16,6 +16,7 @@ class Product: PFObject, PFSubclassing {
     @NSManaged var image: PFFile
     
     
+    
     override class func initialize() {
         struct Static {
             static var onceToken : dispatch_once_t = 0;
@@ -26,20 +27,23 @@ class Product: PFObject, PFSubclassing {
         }
     }
     
+    
     class func parseClassName() -> String {
         return "Product"
     }
     
+    
     override func isEqual(object: AnyObject?) -> Bool {
         if let object = object as? Product {
             return objectId == object.objectId && name == object.name
-        } else {
+        }
+        else {
             return false
         }
     }
     
+    
     override var hash: Int {
         return (objectId?.hashValue)! ^ name.hashValue
     }
-    
 }

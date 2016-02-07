@@ -8,25 +8,34 @@
 
 import UIKit
 
+
+
 protocol ProductCellDelegate {
     func addProductToBuy(product:Product)
     func removeProductToBuy(product:Product)
 }
 
+
+
 class ProductCell: UITableViewCell {
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var productPriceLabel: UILabel!
     @IBOutlet weak var productQuantityLabel: UILabel!
+    
     var product:Product!
     var delegate:ProductCellDelegate?
+    
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
+    
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
+    
     
     func configureCell(product:Product, delegate:ProductCellDelegate) {
         let formatter = NSNumberFormatter()
@@ -40,17 +49,21 @@ class ProductCell: UITableViewCell {
         self.product = product
     }
     
+    
     @IBAction func decreaseProduct(sender: AnyObject) {
         if self.productQuantityLabel.text == "0" {
             return
         }
         
         var productQuantity = Int(self.productQuantityLabel.text!)
+        
         print("\(productQuantity!--)")
+        
         self.productQuantityLabel.text = "\(productQuantity!--)"
         
         self.delegate?.removeProductToBuy(self.product)
     }
+    
     
     @IBAction func increaseProduct(sender: AnyObject) {
         if self.productQuantityLabel.text == "10" {
@@ -58,11 +71,11 @@ class ProductCell: UITableViewCell {
         }
         
         var productQuantity = Int(self.productQuantityLabel.text!)
+        
         print("\(productQuantity!++)")
+        
         self.productQuantityLabel.text = "\(productQuantity!++)"
         
         self.delegate?.addProductToBuy(self.product)
-        
     }
-    
 }
