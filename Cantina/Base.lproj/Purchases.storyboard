@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
@@ -66,7 +66,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="rU3-Fd-PsW">
-                                <rect key="frame" x="46" y="75" width="272" height="73"/>
+                                <rect key="frame" x="46" y="75" width="272" height="72"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VALOR A PAGAR" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7k-Tq-a32">
                                         <rect key="frame" x="0.0" y="0.0" width="84" height="15"/>
@@ -111,13 +111,13 @@
                                                     <rect key="frame" x="96" y="8" width="59" height="29"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="16:20h" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GiA-3z-oss">
-                                                            <rect key="frame" x="0.0" y="0.0" width="32" height="14"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="32" height="15"/>
                                                             <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="10"/>
                                                             <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mate Leão" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Td1-ro-DsP">
-                                                            <rect key="frame" x="0.0" y="14" width="59" height="15"/>
+                                                            <rect key="frame" x="0.0" y="15" width="59" height="15"/>
                                                             <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="12"/>
                                                             <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -180,8 +180,8 @@
                                                     <color key="textColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PAGAMENTO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udV-QT-Whj">
-                                                    <rect key="frame" x="96" y="15" width="74" height="15"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fechado" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udV-QT-Whj">
+                                                    <rect key="frame" x="96" y="15" width="49" height="15"/>
                                                     <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="12"/>
                                                     <color key="textColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -220,7 +220,7 @@
                             <constraint firstItem="rU3-Fd-PsW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="55" id="CLs-Nz-J6J"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ujD-jZ-5tz" secondAttribute="bottom" id="FeN-hB-25l"/>
                             <constraint firstItem="ujD-jZ-5tz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Hyb-YM-IzG"/>
-                            <constraint firstItem="ZLJ-Pq-e2G" firstAttribute="top" secondItem="rU3-Fd-PsW" secondAttribute="bottom" constant="42" id="N5c-6b-CNJ"/>
+                            <constraint firstItem="ZLJ-Pq-e2G" firstAttribute="top" secondItem="rU3-Fd-PsW" secondAttribute="bottom" constant="43" id="N5c-6b-CNJ"/>
                             <constraint firstAttribute="trailing" secondItem="yZM-Vn-mTj" secondAttribute="trailing" constant="10" id="dta-Zo-1BQ"/>
                             <constraint firstItem="ZLJ-Pq-e2G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="46" id="hsf-ez-imJ"/>
                             <constraint firstItem="ujD-jZ-5tz" firstAttribute="top" secondItem="ZLJ-Pq-e2G" secondAttribute="bottom" id="iRr-PV-qvv"/>
