@@ -18,6 +18,7 @@ protocol ProductCellDelegate {
 
 
 class ProductCell: UITableViewCell {
+    @IBOutlet weak var buttonAddProduct: UIButton!
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var productPriceLabel: UILabel!
     @IBOutlet weak var productQuantityLabel: UILabel!
@@ -41,6 +42,9 @@ class ProductCell: UITableViewCell {
         let formatter = NSNumberFormatter()
         formatter.numberStyle = .CurrencyStyle
         formatter.locale = NSLocale(localeIdentifier: "pt_BR")
+        
+        self.buttonAddProduct.layer.cornerRadius = buttonAddProduct.frame.size.width / 2
+        self.buttonAddProduct.clipsToBounds = true
         
         self.productPriceLabel.text = formatter.stringFromNumber(product.price)
         self.productNameLabel?.text = product.name
